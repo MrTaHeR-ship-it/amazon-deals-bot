@@ -596,7 +596,9 @@ class DealsBot:
         return (fresh[0] if fresh else None), False
 
     def publish(self, item: dict, counted: bool = True) -> bool:
-        if item.get("photo_crop") and str(item.get("photo") or "").startswith("http"):
+        crop_list = self.cfg.get("sources", {}).get("crop_card", [])
+        from_branded = str(item.get("source") or "").split("/")[0] in crop_list
+        if (item.get("photo_crop") or from_branded) and str(item.get("photo") or "").startswith("http"):
             item = dict(item, photo=self.cropped_photo(item["photo"]))  # the queue keeps the link
         kind = item["kind"]
         if kind == "deal":
