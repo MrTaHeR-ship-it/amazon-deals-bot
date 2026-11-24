@@ -14,9 +14,10 @@ from datetime import date
 from urllib.parse import quote
 
 from .amazon_api import Deal
+from .offer import THRESHOLD, Offer
 from .links import URL_IN_TEXT, utf16_to_py_index, with_scheme
 
-FSI, PDI = "⁨", "⁩"  # first-strong isolate: keeps a title's own direction
+FSI, PDI = chr(0x2068), chr(0x2069)  # first-strong isolate: keeps a title's own direction
 
 HEADLINES_BIG = [
     "خصم {pct}% على أمازون مصر، الحق قبل ما يخلص 🔥",
@@ -114,6 +115,51 @@ def deal_post(deal: Deal, cfg: dict) -> tuple[str, tuple[str, str]]:
         signature(sig),
     ]
     return "\n".join(lines), ("اطلبه من أمازون 🛒", deal.url)
+
+
+def offer_post(offer: Offer, url: str, cfg: dict, collection: bool = False) -> tuple[str, tuple[str, str]]:
+    """A deal read from a person's post: the saving in pounds and percent comes first."""
+    cur = "جنيه"
+    pct = offer.pct or 0
+    key = offer.title or url
+    if pct >= 50:
+        headline = pick(HEADLINES_BIG, key)
+    elif pct >= 20:
+        headline = pick(HEADLINES_MID, key)
+    else:
+        headline = pick(HEADLINES_SMALL, key)
+    lines = [headline.format(pct=pct), ""]
+
+    if offer.title:
+        title = f"{FSI}{esc(short_title(offer.title, 120))}{PDI}"
+        plain = collection or "خصم" in offer.title or THRESHOLD.search(offer.title)
+        lines.append(f"<b>{title}</b>" if plain else f"المنتج: <b>{title}</b>")
+    if offer.price and offer.old_price:
+        lines.append(f"السعر دلوقتي: <b>{money(offer.price)} {cur}</b> بدل <s>{money(offer.old_price)}</s> {cur}")
+        saving = offer.saving or (offer.old_price - offer.price)
+        lines.append(f"هتوفر {money(round(saving))} {cur} (خصم {pct}%) 💸")
+    elif offer.price:
+        lines.append(f"السعر: <b>{money(offer.price)} {cur}</b>")
+        if pct:
+            lines.append(f"الخصم: {pct}% 💸")
+    elif pct:
+        lines.append(f"الخصم: {pct}% 💸")
+    if offer.rating:
+        lines.append(f"تقييمه ⭐ {offer.rating:.1f} من 5")
+    extra = [esc(e) for e in offer.extra]
+    coupon = [f"كوبون الخصم: <code>{esc(offer.coupon)}</code>"] if offer.coupon else []
+    tail = ["", "شوف العروض من هنا 👇" if collection else "اطلبه من هنا 👇", esc(url)]
+    if offer.price:
+        tail.append("السعر وقت النشر وممكن يتغير في أي وقت")
+    tail.append(signature(cfg["posting"]["signature"]))
+
+    while True:  # a photo caption holds 1024 characters: drop the source's extra lines first
+        body = "\n".join(lines + extra + coupon + tail)
+        if visible_length(body) <= 1000 or not extra:
+            break
+        extra.pop()
+    label = "شوف العروض 🛒" if collection else "اطلبه من أمازون 🛒"
+    return body, (label, url)
 
 
 def link_only_post(url: str, cfg: dict, headline: str | None = None) -> tuple[str, tuple[str, str]]:

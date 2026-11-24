@@ -21,7 +21,13 @@ import yaml
 
 from . import formatter as fmt
 from .amazon_api import AmazonClient, ApiThrottled, ApiUnavailable, Deal
+from urllib.parse import urlsplit
+
 from .links import URL_IN_TEXT, analyse, find_urls
+from .offer import SEPARATOR, Offer
+from .offer import parse as parse_offer
+from .sources import channel_name
+from .sources import fetch as fetch_channel
 from .telegram import DryTelegram, Telegram, TelegramError
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -84,6 +90,7 @@ def load_state(path: Path = STATE_PATH) -> dict:
     state.setdefault("api", {"ok": None, "error": None, "checked_at": None})
     state.setdefault("notified", {})
     state.setdefault("paused", False)
+    state.setdefault("sources", {})
     return state
 
 
@@ -97,6 +104,24 @@ def save_state(state: dict, path: Path = STATE_PATH) -> None:
 
 def parse_time(value: str | None) -> datetime | None:
     return datetime.fromisoformat(value) if value else None
+
+
+def before_footer(text: str) -> str:
+    """A channel post without the footer that follows a separator line."""
+    kept = []
+    for line in (text or "").splitlines():
+        if SEPARATOR.match(line):
+            break
+        kept.append(line)
+    return "\n".join(kept)
+
+
+def link_key(link) -> str:
+    """What makes two posts 'the same deal': the product, or the page for a collection."""
+    if link.asin:
+        return link.asin
+    path = re.sub(r"^/-/(?:en|ar)", "", urlsplit(link.resolved).path).rstrip("/")
+    return "page:" + (path or "/")
 
 
 class DealsBot:
@@ -126,7 +151,7 @@ class DealsBot:
             save_state(self.state, self.state_path)
 
     def notify(self, text: str, key: str | None = None, every_hours: float = 24):
-        """Message the admins; with a key, at most once per `every_hours`."""
+        """Message the admins; with a key, at most once per every_hours."""
         if key:
             last = parse_time(self.state["notified"].get(key))
             if last and self.now() - last < timedelta(hours=every_hours):
@@ -149,7 +174,7 @@ class DealsBot:
             self.state["api"] = {"ok": False, "error": str(exc)[:300],
                                  "checked_at": self.now().isoformat()}
             self.notify(
-                "تنبيه ⚠️ أمازون رافضة طلبات الـ Creators API دلوقتي.\n"
+                "تنبيه ⚠ أمازون رافضة طلبات الـ Creators API دلوقتي.\n"
                 "السبب غالباً إن الحساب محتاج 10 مبيعات مؤهلة في آخر 30 يوم، أو إن بيانات الـ API غلط.\n"
                 "البوت شغال عادي في تحويل اللينكات، بس من غير أسعار وبحث أوتوماتيك لحد ما الـ API يفتح.\n"
                 f"تفاصيل الخطأ: <code>{fmt.esc(str(exc)[:200])}</code>",
@@ -220,7 +245,7 @@ class DealsBot:
             return self.tg.send_text(chat, self.status_text(), preview=False)
         if command in ("/pause", "/resume"):
             self.state["paused"] = command == "/pause"
-            word = "وقفت النشر ⏸️" if self.state["paused"] else "رجعت النشر ▶️"
+            word = "وقفت النشر ⏸" if self.state["paused"] else "رجعت النشر ▶"
             return self.tg.send_text(chat, f"تمام، {word}", preview=False)
         if command == "/clear":
             count = len(self.state["queue"])
@@ -259,7 +284,7 @@ class DealsBot:
                 link_map[url] = url
         if not report.amazon:
             return self.tg.send_text(
-                chat, "اللينكات دي مش لأمازون مصر، فمش هقدر أحط عليها التاج بتاعك 🤷‍♂️", preview=False)
+                chat, "اللينكات دي مش لأمازون مصر، فمش هقدر أحط عليها التاج بتاعك 🤷", preview=False)
 
         leftover = URL_IN_TEXT.sub("", text)
         leftover = re.sub(r"https?://\S+", "", leftover).strip()
@@ -268,10 +293,13 @@ class DealsBot:
 
         items: list[dict] = []
         notes: list[str] = []
-        text_mode = self.cfg.get("inbox", {}).get("text_messages", "raw")
-        raw = "raw" in flags or (has_text and "rich" not in flags and text_mode != "rich")
+        text_mode = self.cfg.get("inbox", {}).get("text_messages", "offer")
+        raw = "raw" in flags or (has_text and "rich" not in flags and text_mode == "raw")
+        as_offer = not raw and has_text and "rich" not in flags and text_mode == "offer"
 
-        if raw:
+        if as_offer:
+            items.append(self.build_offer_item(text, entities, photo, report, link_map))
+        elif raw:
             body = fmt.convert_message(text, entities, link_map, self.cfg)
             only = report.amazon[0].tagged if len(report.amazon) == 1 else None
             items.append({"kind": "html", "html": body, "photo": photo,
@@ -303,7 +331,7 @@ class DealsBot:
             for col in collections:
                 items.append({"kind": "collection", "url": col.tagged, "headline": headline})
 
-        if photo and items and not raw:
+        if photo and items and not raw and not items[0].get("photo"):
             items[0]["photo"] = photo  # a picture you send goes with the first post
 
         if report.other and not self.cfg["posting"].get("keep_other_links"):
@@ -334,7 +362,7 @@ class DealsBot:
         posts = [e["wa"] for e in self.state.get("log", [])
                  if parse_time(e["at"]).astimezone(self.tz).date() == today]
         if not posts:
-            return self.tg.send_text(chat, "لسه مفيش بوستات نزلت النهارده 🤷‍♂️", preview=False)
+            return self.tg.send_text(chat, "لسه مفيش بوستات نزلت النهارده 🤷", preview=False)
         self.tg.send_text(chat, f"عروض النهارده جاهزة لواتساب 👇 ({len(posts)} بوست)\n"
                                 "انسخ كل رسالة وابعتها في القناة أو الجروب.", preview=False)
         chunk = ""
@@ -347,6 +375,78 @@ class DealsBot:
                 chunk += piece
         if chunk:
             self.tg.send_text(chat, fmt.esc(chunk), preview=False)
+
+    def build_offer_item(self, text, entities, photo, report, link_map) -> dict:
+        """One queue item from a person's deal post: our template, or their text if it lists many products."""
+        products = [l for l in report.amazon if l.kind == "product"]
+        asins = list(dict.fromkeys(p.asin for p in products))
+        if len(asins) > 1:
+            body = fmt.convert_message(text, entities, link_map, self.cfg)
+            return {"kind": "html", "html": body, "photo": photo, "button": None,
+                    "key": "multi:" + ",".join(sorted(asins)), "score": 0}
+        primary = products[0] if products else report.amazon[0]
+        offer = parse_offer(text)
+        return {"kind": "offer", "offer": offer.to_dict(), "url": primary.tagged, "asin": primary.asin,
+                "photo": photo, "collection": primary.kind != "product",
+                "key": link_key(primary), "score": offer.score}
+
+    def seen_recently(self, key: str, days: int) -> bool:
+        record = self.state["posted"].get(key)
+        return bool(record) and self.now() - parse_time(record["at"]) < timedelta(days=days)
+
+    def collect_sources(self):
+        """New deal posts from the channels in config.yaml go into the queue, best discounts first."""
+        src = self.cfg.get("sources", {})
+        if not src.get("enabled") or not src.get("channels"):
+            return
+        days = src.get("repost_after_days", 7)
+        queued = {i.get("key") for i in self.state["queue"]}
+        for entry in src["channels"]:
+            name = channel_name(entry)
+            try:
+                posts = fetch_channel(name, self.session)
+            except Exception as exc:  # one channel down must not stop the rest
+                print(f"could not read {name}: {exc}", file=sys.stderr)
+                continue
+            if not posts:
+                continue
+            last = self.state["sources"].get(name)
+            new = posts[-src.get("first_run_take", 2):] if last is None else [p for p in posts if p.post_id > last]
+            self.state["sources"][name] = max(last or 0, posts[-1].post_id)
+            for post in new[-src.get("max_new_per_channel", 10):]:
+                text = before_footer(post.text)
+                urls = find_urls(text)
+                for href, label in zip(post.links, post.link_texts):
+                    if label.strip() and label.strip() in text and href not in urls:
+                        urls.append(href)  # a link hidden behind words in the post
+                if not urls:
+                    continue
+                report, link_map = analyse(urls, self.tag, self.session)
+                if not report.amazon:
+                    continue
+                item = self.build_offer_item(text, None, post.photo, report, link_map)
+                min_pct = src.get("min_discount_percent", 0)
+                if min_pct and (item.get("offer", {}).get("pct") or 0) < min_pct:
+                    continue
+                if item["key"] in queued or self.seen_recently(item["key"], days):
+                    continue
+                item["source"] = f"{name}/{post.post_id}"
+                self.enqueue(item, priority=1)
+                queued.add(item["key"])
+        self.trim_source_queue()
+        self.save()
+
+    def trim_source_queue(self):
+        src = self.cfg.get("sources", {})
+        max_age = timedelta(hours=src.get("max_age_hours", 8))
+        keep, from_sources = [], []
+        for item in self.state["queue"]:
+            if not item.get("source"):
+                keep.append(item)
+            elif self.now() - parse_time(item["created_at"]) <= max_age:
+                from_sources.append(item)
+        from_sources.sort(key=lambda i: (-i.get("score", 0), i["created_at"]))
+        self.state["queue"] = keep + from_sources[: src.get("max_queue", 12)]
 
     def search_page(self, page) -> list[Deal]:
         if self.api_dead:
@@ -369,9 +469,10 @@ class DealsBot:
         last_txt = last.astimezone(self.tz).strftime("%I:%M %p %d/%m") if last else "لسه"
         lines = [
             "حالة البوت 📊",
-            f"النشر: {'واقف ⏸️' if self.state['paused'] else 'شغال ▶️'}",
+            f"النشر: {'واقف ⏸' if self.state['paused'] else 'شغال ▶'}",
             f"في الطابور: {len(q)} بوست ({sum(1 for i in q if i['priority'] == 0)} منك، "
             f"{sum(1 for i in q if i['priority'] == 1)} أوتوماتيك)",
+            f"منهم من القنوات: {sum(1 for i in q if i.get('source'))}",
             f"اتنشر النهارده: {self.state['day']['count']} من {self.cfg['posting']['max_posts_per_day']}",
             f"آخر بوست: {last_txt}",
             f"الـ Creators API: {api_word}",
@@ -457,7 +558,8 @@ class DealsBot:
         if last and self.now() - last < timedelta(minutes=posting["min_gap_minutes"] - 2):
             return
 
-        self.state["queue"].sort(key=lambda i: (i["priority"], i["created_at"]))
+        self.trim_source_queue()
+        self.state["queue"].sort(key=lambda i: (i["priority"], -i.get("score", 0), i["created_at"]))
         while self.state["queue"]:
             item = self.state["queue"][0]
             try:
@@ -508,6 +610,8 @@ class DealsBot:
                 self.send(body, button, photo=item.get("photo") or deal.image, preview=False)
             self.state["posted"][deal.asin] = {"at": self.now().isoformat(), "price": deal.price}
         elif kind == "html":
+            if item.get("key"):
+                self.state["posted"][item["key"]] = {"at": self.now().isoformat(), "price": None}
             button = tuple(item["button"]) if item.get("button") else None
             photo = item.get("photo")
             if photo and fmt.visible_length(item["html"]) > 1024:
@@ -515,10 +619,13 @@ class DealsBot:
             self.send(item["html"], button, photo=photo, preview=True)
         elif kind == "link":
             body, button = fmt.link_only_post(item["url"], self.cfg, item.get("headline"))
-            self.send(body, button, photo=item.get("photo"), preview=True)
+            self.send(body, button, photo=item.get("photo"), preview=True, preview_url=item["url"])
         elif kind == "collection":
             body, button = fmt.collection_post(item["url"], self.cfg, item.get("headline"))
-            self.send(body, button, photo=item.get("photo"), preview=True)
+            self.send(body, button, photo=item.get("photo"), preview=True, preview_url=item["url"])
+        elif kind == "offer":
+            if not self.publish_offer(item):
+                return False
         else:
             return False
 
@@ -528,7 +635,29 @@ class DealsBot:
             self.state["day"]["count"] += 1
         return True
 
-    def send(self, body: str, button, photo: str | None = None, preview: bool = True):
+    def publish_offer(self, item: dict) -> bool:
+        """A deal read from a post. With the API open, Amazon's own price replaces the post's."""
+        offer = Offer.from_dict(item["offer"])
+        deal = None
+        if item.get("asin") and not self.api_dead:
+            found = self.api(self.amazon.get, [item["asin"]])
+            if found is not None and (not found or not found[0].in_stock):
+                if item.get("source"):
+                    return False  # gone or sold out on Amazon
+            elif found:
+                deal = found[0]
+        if deal:
+            body, button = fmt.deal_post(deal, self.cfg)
+            self.send(body, button, photo=item.get("photo") or deal.image, preview=False)
+        else:
+            body, button = fmt.offer_post(offer, item["url"], self.cfg, collection=item.get("collection", False))
+            self.send(body, button, photo=item.get("photo"), preview=True, preview_url=item["url"])
+        self.state["posted"][item["key"]] = {"at": self.now().isoformat(),
+                                            "price": deal.price if deal else offer.price}
+        return True
+
+    def send(self, body: str, button, photo: str | None = None, preview: bool = True,
+             preview_url: str | None = None):
         wa = fmt.to_whatsapp(body)
         self.state.setdefault("log", []).append({"at": self.now().isoformat(), "wa": wa})
         self.state["log"] = self.state["log"][-60:]
@@ -536,20 +665,21 @@ class DealsBot:
         if self.cfg["posting"].get("whatsapp_button", True):
             buttons.append(fmt.share_button(wa))
         try:
-            return self._deliver(body, buttons or None, photo, preview)
+            return self._deliver(body, buttons or None, photo, preview, preview_url)
         except TelegramError as exc:
             if len(buttons) > 1 and any(w in str(exc).lower() for w in ("button", "url", "markup")):
-                return self._deliver(body, buttons[:1], photo, preview)  # without the share button
+                return self._deliver(body, buttons[:1], photo, preview, preview_url)  # no share button
             raise
 
-    def _deliver(self, body: str, button, photo: str | None, preview: bool):
+    def _deliver(self, body: str, button, photo: str | None, preview: bool, preview_url=None):
         if photo:
             try:
                 return self.tg.send_photo(self.channel, photo, body, button=button)
             except TelegramError as exc:
                 print(f"photo failed, sending text: {exc}", file=sys.stderr)
         try:
-            return self.tg.send_text(self.channel, body, button=button, preview=preview)
+            return self.tg.send_text(self.channel, body, button=button, preview=preview,
+                                     preview_url=preview_url)
         except TelegramError as exc:
             if "parse" not in str(exc).lower():
                 raise
@@ -568,6 +698,7 @@ class DealsBot:
     def run(self):
         try:
             self.process_inbox()
+            self.collect_sources()
             self.auto_search()
             self.post_due()
         finally:

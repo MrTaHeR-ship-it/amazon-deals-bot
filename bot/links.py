@@ -28,7 +28,7 @@ AFFILIATE_PARAMS = {
     "tag", "ascsubtag", "linkcode", "linkid", "camp", "creative", "creativeasin",
     "ref_", "ref", "pd_rd_w", "pd_rd_wg", "pd_rd_r", "pd_rd_i", "pf_rd_p",
     "pf_rd_r", "content-id", "social_share", "starsleft", "skipTwisterOG".lower(),
-    "sp_csd", "spla", "psc", "th", "smid_ref",
+    "sp_csd", "spla", "psc", "th", "smid_ref", "btn_type", "btn_ref", "srctok",
 }
 
 URL_IN_TEXT = re.compile(

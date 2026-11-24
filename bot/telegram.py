@@ -39,13 +39,16 @@ class Telegram:
             [{"command": c, "description": d} for c, d in commands]))
 
     def send_text(self, chat_id, text: str, button: tuple[str, str] | None = None,
-                  preview: bool = True, html: bool = True):
+                  preview: bool = True, html: bool = True, preview_url: str | None = None):
+        options = {"is_disabled": not preview}
+        if preview and preview_url:  # the product picture, big and above the text
+            options.update(url=preview_url, prefer_large_media=True, show_above_text=True)
         return self.call(
             "sendMessage",
             chat_id=chat_id,
             text=text,
             parse_mode="HTML" if html else None,
-            link_preview_options={"is_disabled": not preview},
+            link_preview_options=options,
             reply_markup=_button(button),
         )
 
@@ -82,9 +85,9 @@ class DryTelegram:
     def set_commands(self, commands):
         return True
 
-    def send_text(self, chat_id, text, button=None, preview=True, html=True):
+    def send_text(self, chat_id, text, button=None, preview=True, html=True, preview_url=None):
         self.sent.append({"chat": chat_id, "text": text, "button": _first(button),
-                          "buttons": button, "preview": preview})
+                          "buttons": button, "preview": preview, "preview_url": preview_url})
         print(f"\n--- to {chat_id} ---\n{text}\n[button: {button}]")
         return {"message_id": len(self.sent)}
 
