@@ -69,6 +69,11 @@ def pick(options: list[str], key: str) -> str:
     return options[int(digest, 16) % len(options)]
 
 
+def signature(text: str) -> str:
+    """Keep handles like @mr.taher.reviews in one piece inside an Arabic line."""
+    return re.sub(r"(@[\w.]+|https?://\S+)", lambda m: f"{FSI}{m.group(0)}{PDI}", esc(text))
+
+
 def currency_word(code: str) -> str:
     return "جنيه" if (code or "EGP").upper() == "EGP" else code
 
@@ -90,7 +95,7 @@ def deal_post(deal: Deal, cfg: dict) -> tuple[str, tuple[str, str]]:
     lines.append(f"المنتج: <b>{FSI}{esc(short_title(deal.title))}{PDI}</b>")
     if has_discount:
         lines.append(
-            f"السعر دلوقتي: <b>{money(deal.price)} {cur}</b> بدل <s>{money(deal.old_price)} {cur}</s>"
+            f"السعر دلوقتي: <b>{money(deal.price)} {cur}</b> بدل <s>{money(deal.old_price)}</s> {cur}"
         )
         saving = deal.saving or (deal.old_price - deal.price)
         lines.append(f"هتوفر {money(round(saving))} {cur}، يعني خصم {pct}% 💸")
@@ -103,9 +108,10 @@ def deal_post(deal: Deal, cfg: dict) -> tuple[str, tuple[str, str]]:
 
     lines += [
         "",
-        f"اطلبه من هنا 👈 {esc(deal.url)}",
+        "اطلبه من هنا 👇",
+        esc(deal.url),
         "السعر وقت النشر وممكن يتغير في أي وقت",
-        sig,
+        signature(sig),
     ]
     return "\n".join(lines), ("اطلبه من أمازون 🛒", deal.url)
 
@@ -115,8 +121,9 @@ def link_only_post(url: str, cfg: dict, headline: str | None = None) -> tuple[st
     lines = [
         esc(headline) if headline else "عرض جديد على أمازون مصر 🔥",
         "",
-        f"التفاصيل والسعر من هنا 👈 {esc(url)}",
-        cfg["posting"]["signature"],
+        "التفاصيل والسعر من هنا 👇",
+        esc(url),
+        signature(cfg["posting"]["signature"]),
     ]
     return "\n".join(lines), ("اطلبه من أمازون 🛒", url)
 
@@ -126,8 +133,9 @@ def collection_post(url: str, cfg: dict, headline: str | None = None) -> tuple[s
     lines = [
         esc(headline) if headline else "عروض جديدة على أمازون مصر 🔥",
         "",
-        f"شوف كل العروض من هنا 👈 {esc(url)}",
-        cfg["posting"]["signature"],
+        "شوف كل العروض من هنا 👇",
+        esc(url),
+        signature(cfg["posting"]["signature"]),
     ]
     return "\n".join(lines), ("شوف العروض 🛒", url)
 
@@ -247,7 +255,7 @@ def convert_message(text: str, entities: list[dict] | None, link_map: dict[str, 
             continue
         kept.append(line.rstrip())
     body = re.sub(r"\n{3,}", "\n\n", "\n".join(kept)).strip()
-    return f"{body}\n\n{cfg['posting']['signature']}"
+    return f"{body}\n\n{signature(cfg['posting']['signature'])}"
 
 
 def visible_length(html_text: str) -> int:
