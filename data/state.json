@@ -4,26 +4,27 @@
   {
    "kind": "offer",
    "offer": {
-    "title": "حذاء في اس بيس رياضي 2.0 للرجال من اديداس",
-    "price": 1999.0,
-    "old_price": 4129.0,
-    "saving": 2130.0,
-    "pct": 52,
+    "title": "مشروب منكه من مونستر بنكهة أخضر، مشروب طاقة، في علبة سعة 1000.0 مليلترات",
+    "price": 60.0,
+    "old_price": 120.0,
+    "saving": 60.0,
+    "pct": 50,
     "rating": null,
     "coupon": null,
     "extra": [],
     "used": false
    },
-   "url": "https://www.amazon.eg/dp/B0CKXYYR9F?tag=tahergalaleld-21",
-   "asin": "B0CKXYYR9F",
-   "photo": "https://cdn4.telesco.pe/file/qIoz3yEryoj7n3RdDStSbBbVBITK84mHx6KgpuXl5gl0t-cr8TMBXDV3aujwAjytqCk_nNcHlZhGRDh6JOIDUi8vJ_gLccYG9p1v7ZN4hzJUgQp0lqyEPLggv5mSYSfIHHu4hIS5vPPjXb4HGI-DN0-g7Xgqo9kMMGqVtbtTJJklxfXJB0GX4gmX01m6lJj675bzT3q09Qu0Bu-47KezLq9dfeoFRZHIUPuYdqNCz3jXkQ0wcjW97fUlLL5PfYDcVSVCDpH_jo2KFXkKUMTqgnii8Unn4bexvcHhxLN3uW_6YYDdGUq5Zj67PFfN59g9TlG-krJw3CC8VBs7vb4wPA.jpg",
+   "url": "https://www.amazon.eg/dp/B0FLDVBQFD?tag=tahergalaleld-21",
+   "asin": "B0FLDVBQFD",
+   "photo": "https://cdn4.telesco.pe/file/ppig1a3OcnyGs1IetVjYH91FuuUOScKRWDNzevhdKM2X0WvrR3oIHzOwjQi_NwRfaXpCW0-Bgor0R-GNcBWaSJkjoBQYO_LuRodakNUSWyhe0jVn2XFCOIjGwtiRzVHYPbU4VJZubyzryAXllr5Y-ZkCd6v63nTUzPDzpWWC05OHPVHvZVSSqYGB_tT6YCryJenUGDuwWnmBOWSKJvy5HelD59Pg2eWbedU0wgB6rDaeM0rF5CdM3ecTdxMGUd3_2HNFuf3UH9JoU2GZ7QSmGmjmsW7Q0TL6eRNfaVS9Cxu-1QRC3qTPiLjyv5AObur4KITaet99Te_YZ-v9kXpjhg.jpg",
    "collection": false,
-   "key": "B0CKXYYR9F",
-   "score": 57,
-   "source": "HotDealsAQ/42526",
-   "id": "00cca29e70",
+   "key": "B0FLDVBQFD",
+   "score": 55,
+   "source": "HotDealsAQ/42531",
+   "photo_crop": "card",
+   "id": "9b812b0bbf",
    "priority": 1,
-   "created_at": "2026-11-24T21:52:48.240038+00:00"
+   "created_at": "2026-11-24T22:20:01.204630+00:00"
   },
   {
    "kind": "offer",
@@ -72,6 +73,31 @@
    "id": "3309b1ccc8",
    "priority": 1,
    "created_at": "2026-11-24T21:52:49.248962+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
+    "title": "حياة مياه طبيعية 600 مل، عبوة من 20 زجاجة",
+    "price": 95.0,
+    "old_price": 135.0,
+    "saving": 40.0,
+    "pct": 30,
+    "rating": null,
+    "coupon": null,
+    "extra": [],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B0HMP7RNQB?tag=tahergalaleld-21",
+   "asin": "B0HMP7RNQB",
+   "photo": "https://cdn4.telesco.pe/file/eXNqHWZ4ClnicPWoExUm9vJlh9kyNa8Nin3mcYoNx23astZZOoYrk5JKCAN01NZVGMNSgeHTuoT-vPB3QfshyEhVxt05MONCfunNxTPTC-rnAcKfXrx9G3iTOZtot5T7eNrNtgQLDoOzkNIA2ZMI_Ow5CveHb0ZCYNHbusnbpl3pBAPACtId7vNpDjJX19nY8PT53lbGDxJmx0nBvIAjufggoHtI_IWi34Rf4OuwHOZqQjcJeQ-G4uI50efATcSC0YIeenswoXmpkmbRh4dkfGa_KoOAn7SvZ2S4YHJyzsIeVfIsXgDXG0XBHcv2_R4ddRmkd-VkxEzqKBunajntYQ.jpg",
+   "collection": false,
+   "key": "B0HMP7RNQB",
+   "score": 35,
+   "source": "HotDealsAQ/42532",
+   "photo_crop": "card",
+   "id": "4907cf15d9",
+   "priority": 1,
+   "created_at": "2026-11-24T22:20:01.393889+00:00"
   },
   {
    "kind": "offer",
@@ -144,6 +170,56 @@
    "id": "9d62c0ce36",
    "priority": 1,
    "created_at": "2026-11-24T21:52:46.723306+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
+    "title": "HONOR Pad X9a 11.5 بوصة WiFi (8+128 جيجا) Snapdragon 685، شاشة 2.5K، مكبرات صوت رباعية، Android 15، تصميم نحيف رمادي | ضمان سنة، شامل الضرائب",
+    "price": 12999.0,
+    "old_price": 15249.0,
+    "saving": 2250.0,
+    "pct": 15,
+    "rating": null,
+    "coupon": null,
+    "extra": [],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B0F54T2J1S?tag=tahergalaleld-21",
+   "asin": "B0F54T2J1S",
+   "photo": "https://cdn4.telesco.pe/file/ITDuMQrW_OJJWDZdvNa5PzIkQkF8qOiNqrcNnpGsbJMGSoXxgrNwPG7-3etk99lPkVVwoRjgeTPWtDX5eEPjd80TIqSYofsApq-TlHfAkE6pEhp_1-O_H8ioEPF99zbqPYbhqhiVs5O7dNFnldkEiOc249jkrOLKOZhaOvwAyYueIUVVuT8_as3GNBFziAtkkhDGS_PJ0eVRbP_zj7m7R4eudm_wRkv9TSx_OppWdGuuKe0TRPZyeTPiczIEoEH4UnXVJ7U9gzSbAMswKKI66wnXYcgf3U0VMVzX4ilSmD8hSSU-NPH947eZiApWHk-qxXrOQta7JF4ArzN3jhJ7ig.jpg",
+   "collection": false,
+   "key": "B0F54T2J1S",
+   "score": 20,
+   "source": "HotDealsAQ/42533",
+   "photo_crop": "card",
+   "id": "3092aad339",
+   "priority": 1,
+   "created_at": "2026-11-24T22:20:01.611700+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
+    "title": "مكيف هواء سبليت رقمي بانفرتر 1.5 حصان 12000 وحدة حرارية /ساعة بارد وساخن مع بلازما كلاستر وايكو وجفاف وتبريد سريع وتأرجح وتنظيف ذاتي وضاغط يتناسب مع درجات الحرا",
+    "price": 27108.0,
+    "old_price": 30550.0,
+    "saving": 3442.0,
+    "pct": 11,
+    "rating": null,
+    "coupon": null,
+    "extra": [],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B0DT2M7YWW?tag=tahergalaleld-21",
+   "asin": "B0DT2M7YWW",
+   "photo": "https://cdn4.telesco.pe/file/iA_mEPe0aZ2Jp9w3K-CAA5IO9AnKIO3nOp-HrYHjjd3YhHP_fxkadtW8MPkbmarmYcjiYqFLzCR_3LZrVbwj63s19V_grQbO90Obb6T1VMpI8DfGHx3uFANwAszfbVuEd7q0B-XRyCl1v8lxtR4vleVpyELqYedqrqg2tPoIuaHowJxfYA8sS0881-FuZGAqAAjClUo3UcgZ3NFCmxsMB-hWKIb06I_uAm3aLR1HlAVys8cEy2FujHeXhzsIXVRoE3UDdF1M31-iqevwZvZPq7d0SplmmPPPYGaahjTmB-VBjH1vpF5u0g7Yc8Ll2Dk3rYgfuDGQxpN6Enu1E_dm4Q.jpg",
+   "collection": false,
+   "key": "B0DT2M7YWW",
+   "score": 16,
+   "source": "HotDealsAQ/42534",
+   "photo_crop": "card",
+   "id": "97759b73a1",
+   "priority": 1,
+   "created_at": "2026-11-24T22:20:01.808165+00:00"
   },
   {
    "kind": "offer",
@@ -244,6 +320,31 @@
   {
    "kind": "offer",
    "offer": {
+    "title": "مروحة ستاند مزودة بجهاز تحكم من هاي واي، 18 بوصة",
+    "price": 937.0,
+    "old_price": null,
+    "saving": null,
+    "pct": null,
+    "rating": null,
+    "coupon": null,
+    "extra": [],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B0D5PDV94B?tag=tahergalaleld-21",
+   "asin": "B0D5PDV94B",
+   "photo": "https://cdn4.telesco.pe/file/SNnzjA8Nq99-OjLjEeXmz2alGdAS0vYfQqhB7cLyeC3B1jfvTadkgbzYSQZuLwA7pm01xa6oZk39HsjjfJejziPJA8Hc_DeYY8FUiG1MTCdUaw2dnXg-nok1CkynH6iOmm6gyUfsK0253uYavxS_1OLcuEjI7n7ekz2qFBq3bekBeD8c4CdPh7vqoVtASyT4BchunKwWhrFrzUrEa3amH7stmcxFHgtONNe0zMQnB1oKde1szd4fxX6HN8pF9DCG2-dT-mxRoDMwtCSq0DNxZnU0cB6y-_-eBh_IUD1zr45MZKFfsS11h0JkmysmA2eEbOzc-v5U35Zv6-IxKwjDeg.jpg",
+   "collection": false,
+   "key": "B0D5PDV94B",
+   "score": 5,
+   "source": "HotDealsAQ/42535",
+   "photo_crop": "card",
+   "id": "6d61f543f9",
+   "priority": 1,
+   "created_at": "2026-11-24T22:20:01.994925+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
     "title": "خصم عام 5٪ على كل المنتجات تقريبا فى اللينك دا",
     "price": null,
     "old_price": null,
@@ -276,18 +377,22 @@
   "B0DNQLNNKD": {
    "at": "2026-11-24T21:52:52.976026+00:00",
    "price": 699.0
+  },
+  "B0CKXYYR9F": {
+   "at": "2026-11-24T22:20:04.566185+00:00",
+   "price": 1999.0
   }
  },
  "day": {
-  "date": "2026-11-24",
-  "count": 2
+  "date": "2026-11-25",
+  "count": 1
  },
- "last_post_at": "2026-11-24T21:52:52.976045+00:00",
+ "last_post_at": "2026-11-24T22:20:04.566205+00:00",
  "last_auto_search_at": null,
  "api": {
   "ok": false,
-  "error": "AccessDeniedError: Access denied for the requested operation - AssociateNotEligible; Your account does not currently meet the eligibility requirements. [request id: 8d77cf43-9f14-4f4b-885d-cdfb4190d0b6]",
-  "checked_at": "2026-11-24T21:52:51.674173+00:00"
+  "error": "AccessDeniedError: Access denied for the requested operation - AssociateNotEligible; Your account does not currently meet the eligibility requirements. [request id: ca339066-d9e4-4cd4-8110-6286cdf6c0fa]",
+  "checked_at": "2026-11-24T22:20:03.522831+00:00"
  },
  "notified": {
   "api_down": "2026-11-24T19:03:33.260779+00:00"
@@ -310,10 +415,14 @@
   {
    "at": "2026-11-24T21:52:51.674700+00:00",
    "wa": "لقطة النهارده: خصم 53% 🔥\n\nالمنتج: *سماعة رأس بلوتوث من ميديا تيك، بلوتوث 5.3، شحن بمنفذ USB-C، بطارية 300 مللي امبير في الساعة، خاصية إلغاء ضوضاء نشطة…*\nالسعر دلوقتي: *699 جنيه* بدل ~1,499~ جنيه\nهتوفر 800 جنيه (خصم 53%) 💸\n\nاطلبه من هنا 👇\nhttps://www.amazon.eg/dp/B0DNQLNNKD?tag=tahergalaleld-21\nالسعر وقت النشر وممكن يتغير في أي وقت\nتابعنا على كل المنصات: @mr.taher.reviews"
+  },
+  {
+   "at": "2026-11-24T22:20:03.523316+00:00",
+   "wa": "نص التمن وأقل! خصم 52% 😳\n\nالمنتج: *حذاء في اس بيس رياضي 2.0 للرجال من اديداس*\nالسعر دلوقتي: *1,999 جنيه* بدل ~4,129~ جنيه\nهتوفر 2,130 جنيه (خصم 52%) 💸\n\nاطلبه من هنا 👇\nhttps://www.amazon.eg/dp/B0CKXYYR9F?tag=tahergalaleld-21\nالسعر وقت النشر وممكن يتغير في أي وقت\nتابعنا على كل المنصات: @mr.taher.reviews"
   }
  ],
  "sources": {
-  "HotDealsAQ": 42530,
+  "HotDealsAQ": 42535,
   "TechComics": 14042,
   "amdaata": 7689,
   "yahiaashry2026": 403
