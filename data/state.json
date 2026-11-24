@@ -1,17 +1,148 @@
 {
  "tg_offset": 685419774,
- "queue": [],
- "posted": {},
+ "queue": [
+  {
+   "kind": "offer",
+   "offer": {
+    "title": "شماعة اربطة العنق والاحزمة الدوارة من سيلك روت مع 20 خطاف، مقاس 5.5 انش × 0.87 انش × 5.35 انش، ابيض",
+    "price": 31.0,
+    "old_price": null,
+    "saving": null,
+    "pct": null,
+    "rating": null,
+    "coupon": null,
+    "extra": [],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B0DZXV1T7Y?tag=tahergalaleld-21",
+   "asin": "B0DZXV1T7Y",
+   "photo": "https://cdn4.telesco.pe/file/eS6VtfbsL0Bz0obKAuB_8yNZpqq44xEXwOsGdH0Fvvsxwr9joEeqoOccMYkP4w4KMhLZBgmWP_9Ia1SM23mxoQUa43xD5Xe86_nr1j-wKHyXxfARoU0DhSJKWtrbhwaOAgC3qvB8ChxH_MGOzHEUmYxE4xK_DfGFz6xFhU3qX5XHt6Mwp1HkpS_v86Qhzupe3OxG76gawSU7X_4g6dz9Ec7lvlYj_hV7bgFS1iRoBXFitypOLJ2WArjC3JKz86ppUX2Bq2nUMXzm7NQZ5r0343o0WsY0RmZpDAdQV-JrQPVHhI1Qw3IN3YQtADvHoHw6L4s9pqhHDqamz6QbNYjsaA.jpg",
+   "collection": false,
+   "key": "B0DZXV1T7Y",
+   "score": 5,
+   "source": "HotDealsAQ/42520",
+   "id": "6171b8e539",
+   "priority": 1,
+   "created_at": "2026-11-24T21:05:16.805246+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
+    "title": "خصم عام 5٪ على كل المنتجات تقريبا فى اللينك دا",
+    "price": null,
+    "old_price": null,
+    "saving": null,
+    "pct": null,
+    "rating": null,
+    "coupon": null,
+    "extra": [
+     "لما تشترى 5 منتجات"
+    ],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/-/en/promotion/psp/A18KBWDDL262Z4?redirectAsin=B091J7VBN9&redirectMerchantId=A1ZVRGNO5AYLOV&tag=tahergalaleld-21",
+   "asin": null,
+   "photo": "https://cdn4.telesco.pe/file/fq8gP4g11PRctHoz2j15_8NEUr5AobPRcb9ai6s041BtnubhoM5S3Ajz5oz4Tuonhi706ES1fLuqRsqb_Pk1G_c5TwRgLmWdYT-v82G3BI3WxWPrVdTrfXB2WzRkVO7fsRlow62oFnXJz_MO0FcMFsYPfK9SwVunxa2x0xqw-X8hs2OhS3lPgExoOgLv1B4QCy4QbiVaxMUfn5yV_tPQoW4yUUpLKGy2Efdsp_vlHsAwryX4ahlPnQY0HFpPmxGzlNS5JGz8FJWkaf9J7vEfOrZvA10w9AUVmSB8Aqdy_NYI18_bXfnBX4YCnUFxTQnTDo1dCggzRLZ1pR-vd5kiSA.jpg",
+   "collection": true,
+   "key": "page:/promotion/psp/A18KBWDDL262Z4",
+   "score": 0,
+   "source": "TechComics/14041",
+   "id": "8808868a00",
+   "priority": 1,
+   "created_at": "2026-11-24T21:05:17.094874+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
+    "title": "الشركه عامله عليها عرض اصلا و ف امازون بنص سعر العرض مزيل عرق بريحه العود العربي 50مل ف 2 يعني 100 مل و تفتيح من Vacation للاسف قطعه واحده 😔",
+    "price": null,
+    "old_price": null,
+    "saving": null,
+    "pct": null,
+    "rating": null,
+    "coupon": null,
+    "extra": [],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B0GPNS62KQ?tag=tahergalaleld-21",
+   "asin": "B0GPNS62KQ",
+   "photo": null,
+   "collection": false,
+   "key": "B0GPNS62KQ",
+   "score": 0,
+   "source": "amdaata/7688",
+   "id": "83aeaec2ef",
+   "priority": 1,
+   "created_at": "2026-11-24T21:05:17.491769+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
+    "title": "من ارخص احسن ريستات الكيبورد 40 سنتي ميموري فوم",
+    "price": null,
+    "old_price": null,
+    "saving": null,
+    "pct": null,
+    "rating": null,
+    "coupon": null,
+    "extra": [],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B0H15XMDSX?tag=tahergalaleld-21",
+   "asin": "B0H15XMDSX",
+   "photo": "https://cdn4.telesco.pe/file/LnmytdHCQgDuMxFafao3TFxQqS2J80NLk0KR3tUh2uS9a2chFaGFTMQiTS1jVB4f5Rz2Cmf786g4PCyhl5x8nqy2T0F19z846dxFdoY-DTbJWV-VBVV0KqsuNaBMHsCJ7A-jKRRpQhzSHCpn1C4Yr-NCsd-UVPHLDRMZJ8hBi7EyaLs0y3eYBiOfgVCv5ur004UxmOPb2_8EtTTHrTK3n9vZVx3StcTZekvogIT--Xxx3K4ecSOdfi__499RCySR58_vFB6WKRt0vWr_1eNTylBrESYJD2AkWe20Nbfde1_wSOclLw8SIkULGj-GgFRzRhrJlHTA_4VdIowFs4zyLw.jpg",
+   "collection": false,
+   "key": "B0H15XMDSX",
+   "score": 0,
+   "source": "amdaata/7689",
+   "id": "43e2ab5f37",
+   "priority": 1,
+   "created_at": "2026-11-24T21:05:17.569065+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
+    "title": "مستعمل بحالة الجديد",
+    "price": null,
+    "old_price": null,
+    "saving": null,
+    "pct": null,
+    "rating": null,
+    "coupon": null,
+    "extra": [
+     "ايفون اير 256 جيجا",
+     "بسعر 62,999"
+    ],
+    "used": true
+   },
+   "url": "https://www.amazon.eg/dp/B0FQFJJTHG?tag=tahergalaleld-21",
+   "asin": "B0FQFJJTHG",
+   "photo": "https://cdn4.telesco.pe/file/m3R0n-EnJpzlJrZH9zM-0ewmMDfa31odEwInc5WGbIDG1iUUKxcPcWiskiyYIUxeuxvcikhSm9w2srqPr_QgRjdttwAaRWtgiNtsMZKJyaCJfjHXf6DiQrUdbLh4JthIwur2MfKY1-cQcnlelv5GPV8XcJ30TiDejbDiPeVz4dfnZ7FWpGCptkAU96b8oHickmHCRRRtyDBuqi6gEBWAZedGuQ88qps3msmO5ihxVm4-ygme7zsHi28UR1qlyMt4wehzdLk7J6XicHGcHatiYE_hIcHhcj2DOn8WpV7zpgUKjeDFblVolU3E3BsOh2_aNvGkwEhHEoc-6ldH6JLCAg.jpg",
+   "collection": false,
+   "key": "B0FQFJJTHG",
+   "score": 0,
+   "source": "yahiaashry2026/400",
+   "id": "f96c622671",
+   "priority": 1,
+   "created_at": "2026-11-24T21:05:17.895141+00:00"
+  }
+ ],
+ "posted": {
+  "B0DJ963QF6": {
+   "at": "2026-11-24T21:05:19.009037+00:00",
+   "price": 3599.0
+  }
+ },
  "day": {
   "date": "2026-11-24",
-  "count": 0
+  "count": 1
  },
- "last_post_at": "2026-11-24T18:51:39.506489+00:00",
+ "last_post_at": "2026-11-24T21:05:19.009058+00:00",
  "last_auto_search_at": null,
  "api": {
   "ok": false,
-  "error": "AccessDeniedError: Access denied for the requested operation - AssociateNotEligible; Your account does not currently meet the eligibility requirements. [request id: 5c4ed9d4-73af-4301-a16a-a2ddbfa3c1ec]",
-  "checked_at": "2026-11-24T20:49:07.570282+00:00"
+  "error": "AccessDeniedError: Access denied for the requested operation - AssociateNotEligible; Your account does not currently meet the eligibility requirements. [request id: e8de45bb-4f21-42d3-8c9d-df819acd5529]",
+  "checked_at": "2026-11-24T21:05:18.359638+00:00"
  },
  "notified": {
   "api_down": "2026-11-24T19:03:33.260779+00:00"
@@ -26,6 +157,16 @@
   {
    "at": "2026-11-24T18:51:39.124820+00:00",
    "wa": "عرض جديد على أمازون مصر 🔥\n\nالتفاصيل والسعر من هنا 👇\nhttps://www.amazon.eg/dp/B0HBNZDPM3?tag=tahergalaleld-21\nتابعنا على كل المنصات: @mr.taher.reviews"
+  },
+  {
+   "at": "2026-11-24T21:05:18.360497+00:00",
+   "wa": "لو بتدور عليه، ده وقته 👀\n\nالمنتج: *سخان مياه كهربائي رقمي فينوس من فريش، سعة 50 لتر،*\nالسعر دلوقتي: *3,599 جنيه* بدل ~3,999~ جنيه\nهتوفر 400 جنيه (خصم 10%) 💸\n\nاطلبه من هنا 👇\nhttps://www.amazon.eg/dp/B0DJ963QF6?tag=tahergalaleld-21\nالسعر وقت النشر وممكن يتغير في أي وقت\nتابعنا على كل المنصات: @mr.taher.reviews"
   }
- ]
+ ],
+ "sources": {
+  "HotDealsAQ": 42520,
+  "TechComics": 14042,
+  "amdaata": 7689,
+  "yahiaashry2026": 403
+ }
 }
