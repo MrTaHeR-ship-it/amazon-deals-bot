@@ -1,1 +1,19 @@
-{}
+{
+ "tg_offset": null,
+ "queue": [],
+ "posted": {},
+ "day": {
+  "date": "2026-11-24",
+  "count": 0
+ },
+ "last_post_at": null,
+ "last_auto_search_at": null,
+ "api": {
+  "ok": null,
+  "error": null,
+  "checked_at": null
+ },
+ "notified": {},
+ "paused": false,
+ "commands_set": true
+}
