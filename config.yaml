@@ -1,0 +1,57 @@
+# إعدادات بوت عروض أمازون — مفيش هنا أي حاجة سرية، الأسرار في GitHub Secrets
+
+store:
+  marketplace: www.amazon.eg
+  partner_tag: tahergalaleld-21
+  # لغة أسماء المنتجات من الـ API، سيبها فاضية عشان أمازون تختار
+  language: ""
+
+posting:
+  timezone: Africa/Cairo
+  # النشر من الساعة 10 الصبح لحد 1 بالليل (بتوقيت القاهرة)
+  active_from: 10
+  active_to: 1
+  # أقل وقت بين بوست والتاني بالدقايق
+  min_gap_minutes: 30
+  # أقصى عدد بوستات في اليوم (البوستات اللي بتبعتها بـ /now مش بتتحسب)
+  max_posts_per_day: 20
+  signature: "تابعنا على كل المنصات: @mr.taher.reviews"
+  # حساباتك: اللينكات والمنشنات اللي فيها الكلمات دي مش بتتشال من الرسائل
+  own_handles: [mr.taher.reviews, taherreviews, mrtaher, tahertech]
+  # لينكات غير أمازون في الرسائل المحولة (نون، لينكات حد تاني...): false = تتشال
+  keep_other_links: false
+  # زرار "شير على واتساب" تحت كل بوست (ليك وللمتابعين)
+  whatsapp_button: true
+
+inbox:
+  # الرسائل اللي فيها كلام ولينكات (زي رسائل الجروب اللي بتعملها forward):
+  # raw = تنزل زي ما هي بلينكاتك — rich = كل منتج ياخد بوست بالسعر والصورة (محتاج الـ API)
+  text_messages: raw
+  # لما تبعت لينك فيه عروض كتير (بحث أو قسم)، أقصى عدد منتجات ياخدها منه
+  max_from_page: 8
+  # أقل نسبة خصم للمنتجات اللي بتتسحب من لينك فيه عروض كتير
+  min_saving_percent: 10
+
+auto:
+  # البحث الأوتوماتيك عن العروض (بيشتغل بس لو الـ Creators API مفتوح)
+  enabled: true
+  every_hours: 3
+  min_saving_percent: 20
+  # أقل تقييم للمنتج (من 1 لـ 4)، 0 = من غير فلتر
+  min_rating: 4
+  # أقل سعر بالجنيه عشان نبعد عن الحاجات الرخيصة أوي
+  min_price_egp: 150
+  # كام عرض جديد يتضاف للطابور في كل جولة بحث
+  max_new_per_round: 4
+  # ميعيدش نفس المنتج قبل كام يوم (إلا لو سعره نزل 5% أو أكتر)
+  repost_after_days: 7
+  # الكلمات اللي بيدور بيها — زود أو شيل براحتك
+  searches:
+    - keywords: smartphone
+    - keywords: wireless earbuds
+    - keywords: power bank
+    - keywords: smart watch
+    - keywords: fast charger
+    - keywords: laptop
+    - keywords: gaming headset
+    - keywords: tablet
