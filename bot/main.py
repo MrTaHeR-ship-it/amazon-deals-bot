@@ -11,6 +11,7 @@ import json
 import os
 import re
 import sys
+import time
 import uuid
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -20,6 +21,7 @@ import requests
 import yaml
 
 from . import formatter as fmt
+from .images import crop_card
 from .amazon_api import AmazonClient, ApiThrottled, ApiUnavailable, Deal
 from urllib.parse import urlsplit
 
@@ -431,6 +433,8 @@ class DealsBot:
                 if item["key"] in queued or self.seen_recently(item["key"], days):
                     continue
                 item["source"] = f"{name}/{post.post_id}"
+                if name in src.get("crop_card", []) and item.get("photo"):
+                    item["photo_crop"] = "card"
                 self.enqueue(item, priority=1)
                 queued.add(item["key"])
         self.trim_source_queue()
@@ -592,6 +596,8 @@ class DealsBot:
         return (fresh[0] if fresh else None), False
 
     def publish(self, item: dict, counted: bool = True) -> bool:
+        if item.get("photo_crop") and str(item.get("photo") or "").startswith("http"):
+            item = dict(item, photo=self.cropped_photo(item["photo"]))  # the queue keeps the link
         kind = item["kind"]
         if kind == "deal":
             deal, stale = self.refresh(Deal.from_dict(item["deal"]))
@@ -681,9 +687,19 @@ class DealsBot:
             print(f"could not download photo: {exc}", file=sys.stderr)
         return url
 
-    def _deliver(self, body: str, button, photo: str | None, preview: bool, preview_url=None):
+    def cropped_photo(self, url: str):
+        """Only the product from a channel's branded picture; no picture rather than their logo."""
+        data = self.download_photo(url)
+        if isinstance(data, bytes):
+            crop = crop_card(data)
+            if crop:
+                return crop
+        print(f"no product card found, posting without the picture: {url[:80]}", file=sys.stderr)
+        return None
+
+    def _deliver(self, body: str, button, photo, preview: bool, preview_url=None):
         if photo:
-            if photo.startswith("http"):
+            if isinstance(photo, str) and photo.startswith("http"):
                 photo = self.download_photo(photo)
             try:
                 return self.tg.send_photo(self.channel, photo, body, button=button)
@@ -707,21 +723,39 @@ class DealsBot:
         stale = self.now() - timedelta(days=3)
         self.state["queue"] = [i for i in self.state["queue"] if parse_time(i["created_at"]) > stale]
 
-    def run(self):
-        try:
-            self.process_inbox()
-            self.collect_sources()
-            self.auto_search()
-            self.post_due()
-        finally:
-            self.prune()
-            self.save()
+    def run(self, loop_minutes: float = 0, every_seconds: int = 60,
+            sleep=time.sleep, clock=time.monotonic):
+        """One round, or (loop_minutes > 0) a round every minute until the time is up:
+        your messages get answered fast and posts go out on time inside one job."""
+        end = clock() + loop_minutes * 60
+        sources_every = self.cfg.get("sources", {}).get("check_every_minutes", 10) * 60
+        last_sources = None
+        while True:
+            try:
+                self.process_inbox()
+                if last_sources is None or clock() - last_sources >= sources_every:
+                    last_sources = clock()
+                    self.collect_sources()
+                self.auto_search()
+                self.post_due()
+            except Exception as exc:
+                if not loop_minutes:
+                    raise
+                print(f"round failed, trying again next minute: {exc}", file=sys.stderr)
+            finally:
+                self.prune()
+                self.save()
+            if clock() + every_seconds >= end:
+                return
+            sleep(every_seconds)
 
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Amazon Egypt deals bot")
     parser.add_argument("--dry-run", action="store_true",
                         help="print posts instead of sending them, and do not save state")
+    parser.add_argument("--loop-minutes", type=float, default=0,
+                        help="keep running this many minutes, one round every minute")
     args = parser.parse_args(argv)
 
     cfg = load_config()
@@ -745,7 +779,7 @@ def main(argv=None):
 
     bot = DealsBot(cfg, state, tg, amazon, channel or "@preview", admins,
                    state_path=None if args.dry_run else STATE_PATH)
-    bot.run()
+    bot.run(loop_minutes=args.loop_minutes)
 
 
 if __name__ == "__main__":
