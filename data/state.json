@@ -77,6 +77,31 @@
   {
    "kind": "offer",
    "offer": {
+    "title": "طقم لوحة مفاتيح وماوس من يوجرين لاسلكي مريح 2.4GHz بتخطيط عربي وتصميم صامت بتقنية تردد راديوي متوافق مع سطح المكتب",
+    "price": 688.0,
+    "old_price": 1049.0,
+    "saving": 361.0,
+    "pct": 34,
+    "rating": null,
+    "coupon": null,
+    "extra": [],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B0DDJBDJ7T?tag=tahergalaleld-21",
+   "asin": "B0DDJBDJ7T",
+   "photo": "https://cdn4.telesco.pe/file/MpZZ_-NLIKeoj2JfQQ83WE5c4p6k3eiSQSrxIFL4vaoynTzqqTwOktDlVW-fcK4sNsFoa1pRy15EWqnPAUTWhBnbYEPjdwpdueMGxDtdxY4b3RRkquvrEge_SFUz4-F3WIBkNlQdG70HzPPiFiZ9UpOsbVDgcV0V-fkfBBxbjEPvX6dipNnbiPoZMcl42Uvq3V2tTqxptlTW-uIsiQNTfpr8vwfUbk52jXl1RXo5nKO8nUDK3fk-HAqroBwVJkoVDOOUhdy_2jECRhH6aBKiflZG7YZH85zZP4NQsJcRFAgX6-RS696NGKgNI6YoQOCCcCLGO2ILedsh6C061PWX9A.jpg",
+   "collection": false,
+   "key": "B0DDJBDJ7T",
+   "score": 39,
+   "source": "HotDealsAQ/42536",
+   "photo_crop": "card",
+   "id": "a8d6d03d02",
+   "priority": 1,
+   "created_at": "2026-11-24T22:23:46.198629+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
     "title": "حياة مياه طبيعية 600 مل، عبوة من 20 زجاجة",
     "price": 95.0,
     "old_price": 135.0,
@@ -422,7 +447,7 @@
   }
  ],
  "sources": {
-  "HotDealsAQ": 42535,
+  "HotDealsAQ": 42536,
   "TechComics": 14042,
   "amdaata": 7689,
   "yahiaashry2026": 403
