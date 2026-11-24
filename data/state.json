@@ -10,8 +10,8 @@
  "last_auto_search_at": null,
  "api": {
   "ok": false,
-  "error": "AccessDeniedError: Access denied for the requested operation - AssociateNotEligible; Your account does not currently meet the eligibility requirements. [request id: 0fdba078-b9d8-4c7a-ae1c-5073ab5c475b]",
-  "checked_at": "2026-11-24T19:03:33.260737+00:00"
+  "error": "AccessDeniedError: Access denied for the requested operation - AssociateNotEligible; Your account does not currently meet the eligibility requirements. [request id: 420d6e04-adb8-4de8-9cb5-7bd9e3b7bca8]",
+  "checked_at": "2026-11-24T19:30:23.665825+00:00"
  },
  "notified": {
   "api_down": "2026-11-24T19:03:33.260779+00:00"
