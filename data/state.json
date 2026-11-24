@@ -1,12 +1,12 @@
 {
- "tg_offset": 685419770,
+ "tg_offset": 685419772,
  "queue": [],
  "posted": {},
  "day": {
   "date": "2026-11-24",
   "count": 0
  },
- "last_post_at": null,
+ "last_post_at": "2026-11-24T18:35:18.908012+00:00",
  "last_auto_search_at": null,
  "api": {
   "ok": null,
@@ -15,5 +15,11 @@
  },
  "notified": {},
  "paused": false,
- "commands_set": true
+ "commands_set": true,
+ "log": [
+  {
+   "at": "2026-11-24T18:35:18.651517+00:00",
+   "wa": "عرض جديد على أمازون مصر 🔥\n\nالتفاصيل والسعر من هنا 👇\nhttps://www.amazon.eg/dp/B0HNKVL26F?tag=tahergalaleld-21\nتابعنا على كل المنصات: @mr.taher.reviews"
+  }
+ ]
 }
