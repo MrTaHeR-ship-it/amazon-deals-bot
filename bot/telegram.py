@@ -16,12 +16,12 @@ class Telegram:
         self.base = f"https://api.telegram.org/bot{token}/"
         self.session = session or requests.Session()
 
-    def call(self, method: str, **params):
+    def call(self, method: str, files: dict | None = None, **params):
         payload = {k: v for k, v in params.items() if v is not None}
         for key in ("reply_markup", "link_preview_options"):
             if isinstance(payload.get(key), dict):
                 payload[key] = json.dumps(payload[key])
-        resp = self.session.post(self.base + method, data=payload, timeout=30)
+        resp = self.session.post(self.base + method, data=payload, files=files, timeout=60)
         try:
             data = resp.json()
         except ValueError as exc:
@@ -52,12 +52,15 @@ class Telegram:
             reply_markup=_button(button),
         )
 
-    def send_photo(self, chat_id, photo: str, caption: str,
+    def send_photo(self, chat_id, photo, caption: str,
                    button: tuple[str, str] | None = None):
+        """photo: a Telegram file_id, a URL, or the picture's bytes (uploaded with the post)."""
+        upload = isinstance(photo, bytes)
         return self.call(
             "sendPhoto",
+            files={"photo": ("photo.jpg", photo)} if upload else None,
             chat_id=chat_id,
-            photo=photo,
+            photo=None if upload else photo,
             caption=caption,
             parse_mode="HTML",
             reply_markup=_button(button),

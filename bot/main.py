@@ -671,8 +671,20 @@ class DealsBot:
                 return self._deliver(body, buttons[:1], photo, preview, preview_url)  # no share button
             raise
 
+    def download_photo(self, url: str):
+        """Telegram cannot fetch some picture links itself (like t.me's CDN), so we send the bytes."""
+        try:
+            resp = self.session.get(url, timeout=20)
+            if resp.status_code == 200 and resp.headers.get("content-type", "").startswith("image/"):
+                return resp.content
+        except Exception as exc:
+            print(f"could not download photo: {exc}", file=sys.stderr)
+        return url
+
     def _deliver(self, body: str, button, photo: str | None, preview: bool, preview_url=None):
         if photo:
+            if photo.startswith("http"):
+                photo = self.download_photo(photo)
             try:
                 return self.tg.send_photo(self.channel, photo, body, button=button)
             except TelegramError as exc:
