@@ -13,7 +13,8 @@ from urllib.parse import parse_qsl, urlencode, urljoin, urlsplit, urlunsplit
 AMAZON_HOST = "www.amazon.eg"
 
 # Hosts that are Amazon's own short links.
-AMAZON_SHORT_HOSTS = {"amzn.eu", "amzn.to", "a.co", "amzn.com", "amzn.asia"}
+AMAZON_SHORT_HOSTS = {"amzn.eu", "amzn.to", "a.co", "amzn.com", "amzn.asia",
+                      "link.amazon", "amzlinks.in"}
 
 # General shorteners other people use to hide their own Amazon links.
 GENERIC_SHORT_HOSTS = {
@@ -32,7 +33,7 @@ AFFILIATE_PARAMS = {
 
 URL_IN_TEXT = re.compile(
     r"(?:https?://)?(?:[a-z0-9-]+\.)*"
-    r"(?:amazon\.eg|amzn\.eu|amzn\.to|a\.co|amzn\.asia|amzn\.com"
+    r"(?:amazon\.eg|amzn\.eu|amzn\.to|a\.co|amzn\.asia|amzn\.com|link\.amazon|amzlinks\.in"
     r"|bit\.ly|bitly\.com|tinyurl\.com|cutt\.ly|rb\.gy|shorturl\.at|t\.ly|is\.gd"
     r"|s\.id|rebrand\.ly|ow\.ly|buff\.ly|tiny\.cc|v\.gd|short\.gy)"
     r"/[^\s<>\"'()\[\]{}،]*",
@@ -98,9 +99,8 @@ def resolve(url: str, session, max_hops: int = 6) -> str | None:
             return current
         try:
             resp = session.head(current, allow_redirects=False, timeout=10)
-            if resp.status_code in (403, 405) or (
-                resp.status_code < 300 and "location" not in resp.headers
-            ):
+            if resp.status_code not in (301, 302, 303, 307, 308):
+                # some shorteners (link.amazon) only redirect a GET; the body is not read
                 resp = session.get(current, allow_redirects=False, timeout=10, stream=True)
                 resp.close()
         except Exception:  # network trouble: give up on this one link
