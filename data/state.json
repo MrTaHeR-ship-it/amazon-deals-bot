@@ -718,6 +718,32 @@
   {
    "kind": "offer",
    "offer": {
+    "title": "يبخت الي صاحي😁",
+    "price": 22994.0,
+    "old_price": 28500.0,
+    "saving": 5506.0,
+    "pct": 19,
+    "rating": null,
+    "coupon": null,
+    "extra": [
+     "عرض قوي برا اغلى"
+    ],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B0DZ7B83TY?tag=tahergalaleld-21",
+   "asin": "B0DZ7B83TY",
+   "photo": "https://cdn4.telesco.pe/file/uFJFXdQ42b0ViIaktjVg1o5kXgU6bOQlO8i3iSLp9AJ7WVNaEVekFWt-53AgtWNRWlswb6mucaVGDVq73lxTQ3NjF160i_H1kXmVKHUaca0fztR42S8KQ2YnhZnK-Ltq0xZGNCeCSj_LGS6MRlxxkDs0Z8U2i8QkWSCTx3LTSTy5THob7KDVRw7kxBfPCf0oyQsyOCFEpSspXL7orBOVf6AicxoOjlJIQFm2trdQ_OagCRCXvYWJyI0UA43zag2-EfLKqyX1nyb2dAuW2qHzTLqUG3CBjLq-r6BBnNuKS43bgHb59aZb5kiSgrQ9Mkh3JNC8vlhXF9AiwMFU81SrMg.jpg",
+   "collection": false,
+   "key": "B0DZ7B83TY",
+   "score": 24,
+   "source": "amdaata/7700",
+   "id": "8681dac871",
+   "priority": 1,
+   "created_at": "2026-11-25T03:14:32.036512+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
     "title": "رول أكياس قمامة من زي باك (70× 90 سم) - وزن 1 كيلو",
     "price": 77.0,
     "old_price": 94.0,
@@ -1341,6 +1367,61 @@
   {
    "kind": "offer",
    "offer": {
+    "title": "ديسبنسر كولدير نازل ب 5550 بعد الخصم",
+    "price": 5550.0,
+    "old_price": null,
+    "saving": null,
+    "pct": null,
+    "rating": null,
+    "coupon": null,
+    "extra": [
+     "علم على الكوبون تحت السعر",
+     "البائع امازوه .. ضمان سنه .. شحن مجانى"
+    ],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B0CBS97398?tag=tahergalaleld-21",
+   "asin": "B0CBS97398",
+   "photo": "https://cdn4.telesco.pe/file/HyJmmko2UV-fAaP0Lexrcn3UrkVZYg-KGdFYV8y-IdsBEn_sqmI8V-Abj5qTYQzHziMlSlDxco9XmE1tRErL1NTUgeZbAs6LQcx0kEA-YISUGDaBhOMThz5SNwwWtbYebgtdPko8Vd1WuPb1ZfaQ6IqLyL2aBbvWFRgW258oZhOI6Vi_fyNmBDGiKNfbNSz-ObzWu3xBfIXvmC42ZkH82BJ5hG7D13sMa_36Ri58jtTDEFXAbsKTR2Xb8xksFGfQXKptJvHQ6mDlAJhFh-KE88BhUlnBp7eIZMbG2wGFNEbC1zl6ZKH7WGYkZKrlsvOg2Mutzp0aGHwH2VwCCdy3hw.jpg",
+   "collection": false,
+   "key": "B0CBS97398",
+   "score": 5,
+   "source": "TechComics/14055",
+   "id": "b57b1592b2",
+   "priority": 1,
+   "created_at": "2026-11-25T02:54:26.094039+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
+    "title": "ارخص تكيف 3 حصان من براند محترم فى السوق .. تورنيدو بضمان العربى 3 حصان بارد فقط .. نازل ب 29124",
+    "price": 29124.0,
+    "old_price": null,
+    "saving": null,
+    "pct": null,
+    "rating": null,
+    "coupon": null,
+    "extra": [
+     "سعره المعتاد هنا 40 الف",
+     "ألبائع امازون .. ضمان 5 سنوات .. شحن مجانى",
+     "التركيب مجانا من خلال الاتصال بالعربى على 19319"
+    ],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B0F8LDSNHB?tag=tahergalaleld-21",
+   "asin": "B0F8LDSNHB",
+   "photo": "https://cdn4.telesco.pe/file/jv-rjjzCl-sIo2yw6dc6as49PqbCIuh_s8LhomF9bVQ17sN-AsbCMfsT6FtrMKg3z9Tk-VentAVILKF9V0ffRMxlDobPAk1nS7wITMZW2wk9BHxbpGhqQQUDBQmuW9_JfWmhwqoLKXnH57pII_q0mXEcIDaYh6rernQRk3s53VM8StPirF9tK20EVwadjpIUWLbDbtg1FjU_2pY16Hb8yKG08kUjNRYvw5J4_Kb9UUxGw4PWa97eWZwYMX1NYgcsgSKhBWPXvmCJt1m6e0eSva4mU-rkmsP2aXK6FdCa2pK1GGQMevn2XsgZ0pWtsWxPjuC50FTPTZV3CTwu5tP7jg.jpg",
+   "collection": false,
+   "key": "B0F8LDSNHB",
+   "score": 5,
+   "source": "TechComics/14056",
+   "id": "c0558db459",
+   "priority": 1,
+   "created_at": "2026-11-25T03:04:28.931538+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
     "title": "خصم عام 5٪ على كل المنتجات تقريبا فى اللينك دا",
     "price": null,
     "old_price": null,
@@ -1460,8 +1541,8 @@
  ],
  "sources": {
   "HotDealsAQ": 42573,
-  "TechComics": 14053,
-  "amdaata": 7693,
+  "TechComics": 14056,
+  "amdaata": 7700,
   "yahiaashry2026": 403
  }
 }
