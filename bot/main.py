@@ -21,7 +21,9 @@ import requests
 import yaml
 
 from . import formatter as fmt
+from .grid import crop_tile, find_tiles
 from .images import crop_card
+from .links import LinkReport
 from .amazon_api import AmazonClient, ApiThrottled, ApiUnavailable, Deal
 from .amazon_web import Blocked, WebStore
 from urllib.parse import urlsplit
@@ -70,6 +72,8 @@ HELP = """أهلاً يا أبو عبدالله 👋
 
 خلي بالك: البوت بيقرا الرسائل كل نص ساعة تقريباً، فالرد مش هيبقى فوري."""
 
+KEYCAP = re.compile(r"^\s*(?:\d" + chr(0xFE0F) + "?" + chr(0x20E3) + r"|\d+\s*[-.)]|" + chr(0x1F51F) + r")\s*")
+TRAILING_SALE = re.compile(r"\s*[-|]\s*خصم\s*\d+\s*%\s*$")
 FLAG = re.compile(r"^\s*/(now|raw|rich)(?:@\w+)?\b\s*", re.I)
 
 
@@ -302,7 +306,8 @@ class DealsBot:
         as_offer = not raw and has_text and "rich" not in flags and text_mode == "offer"
 
         if as_offer:
-            items.append(self.build_offer_item(text, entities, photo, report, link_map))
+            items += (self.split_grid(text, photo, report, link_map)
+                      or [self.build_offer_item(text, entities, photo, report, link_map)])
         elif raw:
             body = fmt.convert_message(text, entities, link_map, self.cfg)
             only = report.amazon[0].tagged if len(report.amazon) == 1 else None
@@ -393,6 +398,34 @@ class DealsBot:
         return {"kind": "offer", "offer": offer.to_dict(), "url": primary.tagged, "asin": primary.asin,
                 "photo": photo, "collection": primary.kind != "product",
                 "key": link_key(primary), "score": offer.score}
+
+    def split_grid(self, text, photo, report, link_map) -> list[dict]:
+        """A picture of numbered products with a numbered list of links: one post per product,
+        each with its own part of the picture. Empty when the picture or text does not fit."""
+        products = [l for l in report.amazon if l.kind == "product"]
+        if not photo or len(products) < 2 or not self.cfg.get("inbox", {}).get("split_grid", True):
+            return []
+        try:
+            boxes = find_tiles(self.tg.download(photo), len(products))
+        except Exception as exc:
+            print(f"could not read the picture: {exc}", file=sys.stderr)
+            return []
+        if not boxes:
+            return []
+        items, rest = [], text
+        for link, box in zip(products, boxes):
+            before, sep, rest = rest.partition(link.original)
+            if not sep:
+                return []
+            lines = [l for l in before.splitlines() if l.strip() and not URL_IN_TEXT.search(l)]
+            title = KEYCAP.sub("", lines[-1]).strip() if lines else ""
+            item = self.build_offer_item(f"{title}\n{link.original}", None, photo,
+                                         LinkReport(amazon=[link]), link_map)
+            item["offer"]["title"] = TRAILING_SALE.sub("", item["offer"]["title"] or "").strip() or None
+            item["photo_tile"] = box
+            item["score"] = 0  # keep the order of your list
+            items.append(item)
+        return items
 
     def seen_recently(self, key: str, days: int) -> bool:
         record = self.state["posted"].get(key)
@@ -616,6 +649,13 @@ class DealsBot:
         return (fresh[0] if fresh else None), False
 
     def publish(self, item: dict, counted: bool = True) -> bool:
+        if item.get("photo_tile") and item.get("photo"):
+            try:
+                tile = crop_tile(self.tg.download(item["photo"]), item["photo_tile"])
+            except Exception as exc:
+                print(f"could not cut the product picture: {exc}", file=sys.stderr)
+                tile = None
+            item = dict(item, photo=tile)
         crop_list = self.cfg.get("sources", {}).get("crop_card", [])
         from_branded = str(item.get("source") or "").split("/")[0] in crop_list
         if (item.get("photo_crop") or from_branded) and str(item.get("photo") or "").startswith("http"):

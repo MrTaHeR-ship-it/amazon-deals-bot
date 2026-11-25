@@ -14,7 +14,16 @@ class TelegramError(Exception):
 class Telegram:
     def __init__(self, token: str, session: requests.Session | None = None):
         self.base = f"https://api.telegram.org/bot{token}/"
+        self.files = f"https://api.telegram.org/file/bot{token}/"
         self.session = session or requests.Session()
+
+    def download(self, file_id: str) -> bytes:
+        """The bytes of a file someone sent the bot (like a picture)."""
+        path = self.call("getFile", file_id=file_id)["file_path"]
+        resp = self.session.get(self.files + path, timeout=60)
+        if resp.status_code != 200:
+            raise TelegramError(f"getFile: HTTP {resp.status_code}")
+        return resp.content
 
     def call(self, method: str, files: dict | None = None, **params):
         payload = {k: v for k, v in params.items() if v is not None}
@@ -78,9 +87,15 @@ def _button(button):
 class DryTelegram:
     """Prints instead of sending. Used by --dry-run and by the tests."""
 
-    def __init__(self, updates: list[dict] | None = None):
+    def __init__(self, updates: list[dict] | None = None, files: dict | None = None):
         self.updates = list(updates or [])
+        self.files = dict(files or {})
         self.sent: list[dict] = []
+
+    def download(self, file_id):
+        if file_id not in self.files:
+            raise TelegramError("getFile: file not found")
+        return self.files[file_id]
 
     def get_updates(self, offset):
         return [u for u in self.updates if offset is None or u["update_id"] >= offset]
