@@ -3,6 +3,7 @@ into one picture per product."""
 from __future__ import annotations
 
 import io
+import re
 
 import numpy as np
 from PIL import Image
@@ -64,7 +65,38 @@ def crop_tile(data: bytes, box: list[int]) -> bytes | None:
         img = _load(data)
     except Exception:
         return None
-    tile = img.crop(tuple(box))
+    return _square(img.crop(tuple(box)))
+
+
+def crop_frame(data: bytes) -> bytes | None:
+    """A designed picture with the product inside a light frame: just the product.
+    None when there is no such frame."""
+    try:
+        img = _load(data)
+    except Exception:
+        return None
+    a = np.asarray(img).astype(int)
+    h, w, _ = a.shape
+    bright = a.mean(axis=2) > 205
+    lab, _ = ndimage.label(ndimage.binary_closing(bright, iterations=2))
+    best = None
+    for i, (ys, xs) in enumerate(ndimage.find_objects(lab), 1):
+        bh, bw = ys.stop - ys.start, xs.stop - xs.start
+        if bw < w * 0.25 or bh < h * 0.25 or bw > w * 0.95 or bh > h * 0.95:
+            continue
+        if (lab[ys, xs] == i).mean() > 0.3:  # a frame is a thin outline, not a filled shape
+            continue
+        if not best or bw * bh > best[2] * best[3]:
+            best = (xs.start, ys.start, bw, bh)
+    if not best:
+        return None
+    x, y, bw, bh = best
+    inset = max(6, round(min(bw, bh) * 0.04))
+    return _square(img.crop((x + inset, y + inset, x + bw - inset, y + bh - inset)))
+
+
+def _square(tile: Image.Image) -> bytes:
+    """Trim to the product and centre it on a square of the same background."""
     a = np.asarray(tile).astype(int)
     edge = np.concatenate([a[0], a[-1], a[:, 0], a[:, -1]])
     bg = np.median(edge, axis=0)
@@ -79,3 +111,51 @@ def crop_tile(data: bytes, box: list[int]) -> bytes | None:
     buf = io.BytesIO()
     square.save(buf, "JPEG", quality=90)
     return buf.getvalue()
+
+
+# --- matching separate pictures to the products in a list ----------------------------
+
+ARABIC_FOLD = str.maketrans({"ى": "ي", "أ": "ا", "إ": "ا", "آ": "ا", "ة": "ه", "ـ": ""})
+WORD = re.compile(r"[0-9A-Za-z" + chr(0x621) + "-" + chr(0x64A) + r"]{2,}")
+
+
+def words(text: str) -> set[str]:
+    return set(WORD.findall((text or "").translate(ARABIC_FOLD).lower()))
+
+
+def read_text(data: bytes) -> str:
+    """The words printed on a picture (Arabic and English). Empty when OCR is not installed."""
+    try:
+        import pytesseract
+        img = _load(data).convert("L")
+        w, h = img.size
+        parts = []
+        for k in range(10):  # line by line works much better than the whole design at once
+            top = int(h * k * 0.09)
+            band = img.crop((0, top, w, min(h, top + int(h * 0.18))))
+            parts.append(pytesseract.image_to_string(band, lang="ara", config="--psm 6"))
+        return "\n".join(parts)
+    except Exception:
+        return ""
+
+
+def match_pictures(picture_texts: list[str], titles: list[str]) -> list[int]:
+    """For each title, the index of the picture whose printed words fit it best. Pictures keep
+    their order when the words do not tell them apart."""
+    n = len(titles)
+    order = list(range(n))
+    if len(picture_texts) != n:
+        return order
+    scores = [[len(words(t) & words(p)) for p in picture_texts] for t in titles]
+    pairs = sorted(((scores[i][j], i, j) for i in range(n) for j in range(n)), reverse=True)
+    chosen, used_t, used_p = {}, set(), set()
+    for score, i, j in pairs:
+        if score == 0:
+            break
+        if i not in used_t and j not in used_p:
+            chosen[i] = j
+            used_t.add(i)
+            used_p.add(j)
+    if len(chosen) != n:
+        return order
+    return [chosen[i] for i in range(n)]

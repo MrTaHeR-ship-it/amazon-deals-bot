@@ -21,7 +21,7 @@ import requests
 import yaml
 
 from . import formatter as fmt
-from .grid import crop_tile, find_tiles
+from .grid import crop_frame, crop_tile, find_tiles, match_pictures, read_text
 from .images import crop_card
 from .links import LinkReport
 from .amazon_api import AmazonClient, ApiThrottled, ApiUnavailable, Deal
@@ -216,6 +216,15 @@ class DealsBot:
 
         offset = self.state["tg_offset"]
         updates = self.tg.get_updates(offset + 1 if offset is not None else None)
+        albums: dict[str, list] = {}
+        for update in updates:  # the pictures of an album arrive as separate messages
+            m = update.get("message") or {}
+            if m.get("media_group_id") and m.get("photo"):
+                albums.setdefault(m["media_group_id"], []).append((m["message_id"], m["photo"][-1]["file_id"]))
+        for update in updates:
+            m = update.get("message") or {}
+            if m.get("media_group_id") in albums and (m.get("caption") or "").strip():
+                m["_album"] = [f for _, f in sorted(albums[m["media_group_id"]])]
         for update in sorted(updates, key=lambda u: u["update_id"]):
             self.state["tg_offset"] = update["update_id"]
             msg = update.get("message")
@@ -306,7 +315,8 @@ class DealsBot:
         as_offer = not raw and has_text and "rich" not in flags and text_mode == "offer"
 
         if as_offer:
-            items += (self.split_grid(text, photo, report, link_map)
+            items += (self.split_album(text, msg.get("_album") or [], report, link_map)
+                      or self.split_grid(text, photo, report, link_map)
                       or [self.build_offer_item(text, entities, photo, report, link_map)])
         elif raw:
             body = fmt.convert_message(text, entities, link_map, self.cfg)
@@ -398,6 +408,44 @@ class DealsBot:
         return {"kind": "offer", "offer": offer.to_dict(), "url": primary.tagged, "asin": primary.asin,
                 "photo": photo, "collection": primary.kind != "product",
                 "key": link_key(primary), "score": offer.score}
+
+    def list_items(self, text, products, report, link_map) -> list[dict] | None:
+        """One offer per numbered line of a list: the line just above each product link."""
+        items, rest = [], text
+        for link in products:
+            before, sep, rest = rest.partition(link.original)
+            if not sep:
+                return None
+            lines = [l for l in before.splitlines() if l.strip() and not URL_IN_TEXT.search(l)]
+            title = KEYCAP.sub("", lines[-1]).strip() if lines else ""
+            item = self.build_offer_item(f"{title}\n{link.original}", None, None,
+                                         LinkReport(amazon=[link]), link_map)
+            item["offer"]["title"] = TRAILING_SALE.sub("", item["offer"]["title"] or "").strip() or None
+            item["score"] = 0  # keep the order of your list
+            items.append(item)
+        return items
+
+    def split_album(self, text, photos, report, link_map) -> list[dict]:
+        """An album with one picture per product and a numbered list: each picture goes with
+        the product whose name is printed on it (or the same place in the album)."""
+        products = [l for l in report.amazon if l.kind == "product"]
+        if len(photos) < 2 or len(photos) != len(products):
+            return []
+        items = self.list_items(text, products, report, link_map)
+        if not items:
+            return []
+        texts = []
+        for file_id in photos:
+            try:
+                texts.append(read_text(self.tg.download(file_id)))
+            except Exception as exc:
+                print(f"could not read an album picture: {exc}", file=sys.stderr)
+                texts.append("")
+        order = match_pictures(texts, [i["offer"]["title"] or "" for i in items])
+        for item, j in zip(items, order):
+            item["photo"] = photos[j]
+            item["photo_frame"] = True
+        return items
 
     def split_grid(self, text, photo, report, link_map) -> list[dict]:
         """A picture of numbered products with a numbered list of links: one post per product,
@@ -649,6 +697,12 @@ class DealsBot:
         return (fresh[0] if fresh else None), False
 
     def publish(self, item: dict, counted: bool = True) -> bool:
+        if item.get("photo_frame") and item.get("photo"):
+            try:
+                data = self.tg.download(item["photo"])
+                item = dict(item, photo=crop_frame(data) or data)
+            except Exception as exc:
+                print(f"could not cut the product picture: {exc}", file=sys.stderr)
         if item.get("photo_tile") and item.get("photo"):
             try:
                 tile = crop_tile(self.tg.download(item["photo"]), item["photo_tile"])
