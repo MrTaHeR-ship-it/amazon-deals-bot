@@ -1054,6 +1054,31 @@
   {
    "kind": "offer",
    "offer": {
+    "title": "تكييف سبليت بلازما كلستر ديجيتال 3 حصان بارد وساخن AY-AP24ZHE من شارب، ابيض",
+    "price": 35099.0,
+    "old_price": 48905.0,
+    "saving": 13806.0,
+    "pct": 28,
+    "rating": null,
+    "coupon": null,
+    "extra": [],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B0101RZHF4?tag=tahergalaleld-21",
+   "asin": "B0101RZHF4",
+   "photo": "https://cdn4.telesco.pe/file/C3RhFnYdfE22fUPfFBkEQrZn2YLWoJ5h_peUwT7RjEGaUL-ZzY5otInrRbg2mtjtmIlxQIYHNjIYQqTLIUsMs447g87iAQ82dyfVehWZ2wimRFHuFuEJ2XAnA-Hnzdy9MAY-aZM-g8hj1G3qsWeuem8WH3JYuFoTj1dZfcOn114154aLssrkCsPbo31uKd8wVsiYxee55Isn5FeA_H8fPkIFwX-3ww-kcI-ddZOKP0Nqc3QLbgoURF4nTle63AEGm0ZMu7b03HuWUdiEySur0HytXKXuOKwoler2yKYf45W52PXi0wEuLPtDmIdeM2dBKvG3Py8PK-XzZalfPOyWbQ.jpg",
+   "collection": false,
+   "key": "B0101RZHF4",
+   "score": 33,
+   "source": "HotDealsAQ/42842",
+   "photo_crop": "card",
+   "id": "a32264482c",
+   "priority": 1,
+   "created_at": "2026-11-25T17:38:14.120034+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
     "title": "الترال لايف ميزان حرارة رقمي بطرف صلب",
     "price": 131.0,
     "old_price": 180.0,
@@ -1175,6 +1200,31 @@
    "id": "adfdf55242",
    "priority": 1,
    "created_at": "2026-11-25T16:53:14.315720+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
+    "title": "مشروب الطاقة من بويزن، نكهة كلاسيكية، عبوة 250 مل، 32 مللي جرام كافيين",
+    "price": 14.0,
+    "old_price": 17.0,
+    "saving": 3.0,
+    "pct": 18,
+    "rating": null,
+    "coupon": null,
+    "extra": [],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B0H8WYYDZN?tag=tahergalaleld-21",
+   "asin": "B0H8WYYDZN",
+   "photo": "https://cdn4.telesco.pe/file/vCzv8Ayvf2oNK3we1rVazmg7ehjAVSKpSZg0sLBdJgfoAGgcCoIg3EhDLZtfFlWw8k9y--d7zsDTAXkBWO-uDaqvl_p-VUM7rawpEHYNmO20uQjfyxnbvL16DO6IOI7nrMDGQu3ASD9drbs_ut6Q9jxBIIJBDPbiAbcg4XJhxLVnZcldOdQKPWo1_JaGyojUw7LfmVMOhKfrTV7DZhl2nGO6d8hISg1JT2Tpxbq9e3zugGg147xUi2m4ers9-6R0yxjloUpse2AAfAcpZHWk6LIISyOJNLtsKJ0WaEwpsmYUrUXCkCD3eSHobTZLBRaM6wp5MaZ7kLBrdpvo_4p3Rg.jpg",
+   "collection": false,
+   "key": "B0H8WYYDZN",
+   "score": 23,
+   "source": "HotDealsAQ/42843",
+   "photo_crop": "card",
+   "id": "22fc5e2950",
+   "priority": 1,
+   "created_at": "2026-11-25T17:38:14.252128+00:00"
   },
   {
    "kind": "offer",
@@ -1473,7 +1523,7 @@
   }
  ],
  "sources": {
-  "HotDealsAQ": 42841,
+  "HotDealsAQ": 42844,
   "TechComics": 14089,
   "amdaata": 7700,
   "yahiaashry2026": 410
