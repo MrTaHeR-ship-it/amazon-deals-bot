@@ -23,6 +23,7 @@ import yaml
 from . import formatter as fmt
 from .images import crop_card
 from .amazon_api import AmazonClient, ApiThrottled, ApiUnavailable, Deal
+from .amazon_web import Blocked, WebStore
 from urllib.parse import urlsplit
 
 from .links import URL_IN_TEXT, analyse, find_urls
@@ -141,6 +142,7 @@ class DealsBot:
         self.state_path = state_path
         self.tz = ZoneInfo(cfg["posting"]["timezone"])
         self.tag = cfg["store"]["partner_tag"]
+        self.web = WebStore(self.session, self.tag)
         self.api_dead = amazon is None
 
     # --- helpers ------------------------------------------------------------------
@@ -496,28 +498,44 @@ class DealsBot:
 
     def auto_search(self):
         auto = self.cfg.get("auto", {})
-        if not auto.get("enabled") or self.api_dead:
+        use_web = self.api_dead and auto.get("web_search", True)
+        if not auto.get("enabled") or (self.api_dead and not use_web):
             return
+        every = auto.get("web_every_hours", 1) if use_web else auto.get("every_hours", 3)
         last = parse_time(self.state["last_auto_search_at"])
-        if last and self.now() - last < timedelta(hours=auto.get("every_hours", 3)):
+        if last and self.now() - last < timedelta(hours=every):
             return
-        if sum(1 for i in self.state["queue"] if i["priority"] == 1) >= auto.get("max_new_per_round", 4):
+        if sum(1 for i in self.state["queue"] if i["kind"] == "deal") >= auto.get("max_new_per_round", 4):
             return
 
         min_saving = auto.get("min_saving_percent", 20)
         min_price = int(auto.get("min_price_egp", 0) * 100) or None
         candidates: dict[str, Deal] = {}
         for search in auto.get("searches", []):
-            deals = self.api(self.amazon.search,
-                             keywords=search.get("keywords"), node=search.get("node"),
-                             search_index=search.get("search_index"),
-                             min_saving=search.get("min_saving_percent", min_saving),
-                             min_rating=auto.get("min_rating") or None,
-                             min_price=min_price, count=10)
-            if self.api_dead:
-                return
+            if use_web:
+                try:
+                    deals = self.web.search(search.get("keywords"))
+                except Blocked as exc:
+                    self.notify("تنبيه ⚠ أمازون وقفت البحث من البوت مؤقتاً (كابتشا). "
+                                "هيحاول تاني الجولة الجاية، والعروض من القنوات شغالة عادي.\n"
+                                f"<code>{fmt.esc(str(exc)[:150])}</code>", key="web_blocked", every_hours=12)
+                    break
+                except Exception as exc:  # one bad page must not stop the round
+                    print(f"web search failed for {search.get('keywords')}: {exc}", file=sys.stderr)
+                    continue
+            else:
+                deals = self.api(self.amazon.search,
+                                 keywords=search.get("keywords"), node=search.get("node"),
+                                 search_index=search.get("search_index"),
+                                 min_saving=search.get("min_saving_percent", min_saving),
+                                 min_rating=auto.get("min_rating") or None,
+                                 min_price=min_price, count=10)
+                if self.api_dead:
+                    return
             for deal in deals or []:
                 if not deal.in_stock or not deal.price or (deal.saving_pct or 0) < min_saving:
+                    continue
+                if min_price and deal.price * 100 < min_price:
                     continue
                 if auto.get("min_rating") and deal.rating and deal.rating < auto["min_rating"]:
                     continue
@@ -533,7 +551,9 @@ class DealsBot:
         for deal in ranked:
             if deal.asin in queued or self.recently_posted(deal, auto.get("repost_after_days", 7)):
                 continue
-            self.enqueue({"kind": "deal", "deal": deal.to_dict(), "chosen": False}, priority=1)
+            score = (deal.saving_pct or 0) + 2 * (deal.rating or 0) + 5
+            self.enqueue({"kind": "deal", "deal": deal.to_dict(), "chosen": False, "score": score},
+                         priority=1)
             added += 1
             if added >= auto.get("max_new_per_round", 4):
                 break
