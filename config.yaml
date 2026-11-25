@@ -66,7 +66,7 @@ auto:
   # كل كام ساعة يدور لما الـ Creators API يكون مفتوح
   every_hours: 3
   # لما الـ API مقفول: يدور في صفحات البحث بتاعة أمازون مصر نفسها
-  web_search: true
+  web_search: false
   web_every_hours: 1
   min_saving_percent: 20
   # أقل تقييم للمنتج (من 1 لـ 4)، 0 = من غير فلتر
