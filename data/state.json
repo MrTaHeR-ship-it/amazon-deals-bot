@@ -4,81 +4,6 @@
   {
    "kind": "offer",
    "offer": {
-    "title": "رابوو فأرة سلكي متوافقة مع بي سي ولابتوب - N1200",
-    "price": 112.0,
-    "old_price": 250.0,
-    "saving": 138.0,
-    "pct": 55,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/dp/B00BX631F6?tag=tahergalaleld-21",
-   "asin": "B00BX631F6",
-   "photo": "https://cdn4.telesco.pe/file/R2sLKiQUwuoEIwYSSZg5wi8VXfTao-QRqjCR-7E34_XKJ4s9gdeGWs26g5MYPIB1TY6An9sSrKQ9FXTcDWsoouqc9I6-QK2yraPBAHZwhFuw8Y0z-0jH4b2Dx5Ae0eOs5gWmD9veDNNiIMqo7dqiCzkAQg-BZJ6Fb7Bhs4iWH4Ic-_CBxpTNc66aZmqFKMKR81bHEhtgbPD4qdHHaXMPqgiZYkGTG3MuZJXefXuAJ6tZA46u36kTsaxFpzSr9sN9ctQO7sCoSy9o6tkFGK73OSejQePQ_nLvPqjXtGWaT92q-N6VesHev7tNqNGM_CHTyAUYmGec5I3DV4gxYLfBlw.jpg",
-   "collection": false,
-   "key": "B00BX631F6",
-   "score": 60,
-   "source": "HotDealsAQ/43104",
-   "photo_crop": "card",
-   "id": "3298e415d1",
-   "priority": 1,
-   "created_at": "2026-11-26T12:30:41.732720+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
-    "title": "صابون اليدين المرطب بحماية فائقة متعادل الحموضة من ديفا، سعة 500 مل",
-    "price": 30.0,
-    "old_price": 66.0,
-    "saving": 36.0,
-    "pct": 55,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/dp/B0DVCDC913?tag=tahergalaleld-21",
-   "asin": "B0DVCDC913",
-   "photo": "https://cdn4.telesco.pe/file/SUn5lmdVEiyf8TChlUt8qTRzpsGySI3tSnefaILenPmhZ83cCY56IRMi9S0_dC9_oywKSg3ivVS8q7ZwVlSqIjPtxK8eI2oH3e5xwkLLTt7uZJkSSfcLJWGe8TfUq430lNSuZeK1v_ziYaKtKocUG1TiOAOj9mg9F1WPUSQYW9EjL-ttFNzsl2tBKt4_XZtnl81NCUGXdxXw9fgt4Oov372e9TJ7r7XAMDT7H0-Qq8K_nQbGvbutONipZ138OE5PAH39P8f1oxn2OOHScloH1Zshf99FkFhHyt4CBtrOZ7fnmqwTWkHcO426u_y_tZ1-rZIpMgEZL4o2U7aOtjDZvQ.jpg",
-   "collection": false,
-   "key": "B0DVCDC913",
-   "score": 60,
-   "source": "HotDealsAQ/43200",
-   "photo_crop": "card",
-   "id": "af5faafa79",
-   "priority": 1,
-   "created_at": "2026-11-26T15:12:01.513860+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
-    "title": "جل مائي واقي من الشمس بيور تاتش من فاكيشن، 60 مل",
-    "price": 135.0,
-    "old_price": 288.0,
-    "saving": 153.0,
-    "pct": 53,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/dp/B0CHXLNJPD?tag=tahergalaleld-21",
-   "asin": "B0CHXLNJPD",
-   "photo": "https://cdn4.telesco.pe/file/S9UHxifFxLdnynhz8Wo7oA5siGYNaPAKGmgjS84DpEtXe-PN3QZ_Tl357--RFpfX6U-RQ5Tra81i3HYmEiUIC6hoVBmXuaFXHjY0wr4lcYg5ePUP4aWCq5m6yM-IAvxqs9McvkbrC1LgMnbMcTl6zBIHtNqrQT1xhVJPTBZbDYGFB0kxAIFIQmI0-IF43K_JiZKoRwg39PwqZ2iryoJ9G-wscnoMCwsr6-DoCteAd1d1O8njZbYCA4E_rl4Pa-vFFGVsjuJQCU_MNqOHhTUGK8wOfhoKGg-Q2BtEJEcC4VN0x2emlW8U0m87gAhisN3lr3UMN9xG-uP_3UxN-FAmvg.jpg",
-   "collection": false,
-   "key": "B0CHXLNJPD",
-   "score": 58,
-   "source": "HotDealsAQ/43150",
-   "photo_crop": "card",
-   "id": "4e871cf6e2",
-   "priority": 1,
-   "created_at": "2026-11-26T14:21:35.197586+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
     "title": "ترنديول قميص منسوج بقصة واسعة ومقاس كبير للنساء من روت، موديل Twoaw23go00359 (عبوة من قطعة واحدة)",
     "price": 429.0,
     "old_price": 888.0,
@@ -129,27 +54,52 @@
   {
    "kind": "offer",
    "offer": {
-    "title": "حذاء جري دورامو Rc2 للنساء من اديداس، بينك، مقاس 6.5",
-    "price": 1795.0,
-    "old_price": 3411.0,
-    "saving": 1616.0,
-    "pct": 47,
+    "title": "معطر جو ماجيك سبرايز برائحة مضادة للتبغ من ماكسيل - 475 مل",
+    "price": 35.0,
+    "old_price": 70.0,
+    "saving": 35.0,
+    "pct": 50,
     "rating": null,
     "coupon": null,
     "extra": [],
     "used": false
    },
-   "url": "https://www.amazon.eg/dp/B0DHXC2ZF4?tag=tahergalaleld-21",
-   "asin": "B0DHXC2ZF4",
-   "photo": "https://cdn4.telesco.pe/file/E_NvIWbJtHCmhxrsvmW9KWthkER5kHRLJLXqLb4R0Z1Sr8w3A8or8hWEbKBMWewOQ8fiAV-l3kuOYoUSaWqzXKrOh8HusSQXOHq38Y8DCvOlihOGHnVxvw1ysghTq94-o6uyFmrMzIONk6gQgIaaLpKrOfibyWAwc8fy7nnfvaOsEkscsuDQmbpGd9EL8_3shgoV57re6ssPyDctG5E6c5U7a6SKy-srbULwwf8-fS7VoUZ3TVSiTO_WyDm9850wERV5K5iiQ5iUq0lOM85ogTXvdXJAxSx7xRS79CYoRhoTefFmAZmFkRF8XbOg03AgDY3k8Fer6QqNBB3onK6kkg.jpg",
+   "url": "https://www.amazon.eg/dp/B08WJN65HC?tag=tahergalaleld-21",
+   "asin": "B08WJN65HC",
+   "photo": "https://cdn4.telesco.pe/file/vnwaKnqhwYtkpZVhUl8J2oMxcaNmlxDOWUUfX3L1SRKRa4J-4Op_j-At0TrbeaZWgoqH7MBWdMAIQoYVTdi4JSMJgoUx4ooVFQ7L3xTB3ZljbJBqkSdS0Pa0hGhdFR-gFVFYVALPyVzEaxz7fMMZAdfFGp0SCQtAKCCwF-iXCrAbGG-2WD7FrjIlR-5_HyjOCJ_iAeTlD9hRkgBS6-avrcZIX7oHiBdQx77b_16UtlvPXo8Ln5iYe7XXaqC7iVsaFUqj5I7kGvJwMt75nu2MCVCtH8IkpLO9L2jfX0NRESJg0zW3FL0s_Ifp8gWyb0ugwlWQTo_expT56iJ71iDlDA.jpg",
    "collection": false,
-   "key": "B0DHXC2ZF4",
-   "score": 52,
-   "source": "HotDealsAQ/42975",
+   "key": "B08WJN65HC",
+   "score": 55,
+   "source": "HotDealsAQ/43206",
    "photo_crop": "card",
-   "id": "473d058e21",
+   "id": "1005b3c919",
    "priority": 1,
-   "created_at": "2026-11-26T08:05:26.383546+00:00"
+   "created_at": "2026-11-26T15:59:42.673496+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
+    "title": "معطر جو سبرايز برائحة الرومبا من ماكسيل ماجيك - 475 مل",
+    "price": 35.0,
+    "old_price": 70.0,
+    "saving": 35.0,
+    "pct": 50,
+    "rating": null,
+    "coupon": null,
+    "extra": [],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B08WJPYF9B?tag=tahergalaleld-21",
+   "asin": "B08WJPYF9B",
+   "photo": "https://cdn4.telesco.pe/file/vojZxL3K4TEfAYchB3f-7vClsfJk6Fanoh9TUDKvgOmVOC7qyP7z04lXBQoZHoEvn9DR6CdCk_NUhuHRBaDLj7ydDwJCuZa-8palnycDECvXOpY4g5WtUJXA7GtdYyslv6BZxsojqjw6yL59qr98Dq8BjdM9_dsItuhkAirmDS1rjfDTehoiiOy4yTDyZdAKSdYVJcDtr0QJxo2njGVcuqLUlkaM3WA3z7TW6vXEzLjxiSdrwnR4hUxFDYPGTFyBFq_VUpZ4rmUcJ1mXbBIyJVYCjKQ-yKeOaVE3UPZrjnpdfnVCj_F9QCdWJMC1M5Ia9iz48ppllgQV5Nl6ZrhHfQ.jpg",
+   "collection": false,
+   "key": "B08WJPYF9B",
+   "score": 55,
+   "source": "HotDealsAQ/43207",
+   "photo_crop": "card",
+   "id": "377ee6bb7a",
+   "priority": 1,
+   "created_at": "2026-11-26T15:59:43.063934+00:00"
   },
   {
    "kind": "offer",
@@ -279,6 +229,31 @@
   {
    "kind": "offer",
    "offer": {
+    "title": "ماكينة صنع الساندويتشات الكهربائية بألواح غير لاصقة مع مصابيح مؤشر مزدوجة من راف، أسود وفضي",
+    "price": 431.0,
+    "old_price": 750.0,
+    "saving": 319.0,
+    "pct": 43,
+    "rating": null,
+    "coupon": null,
+    "extra": [],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B0H51JZ6YK?tag=tahergalaleld-21",
+   "asin": "B0H51JZ6YK",
+   "photo": "https://cdn4.telesco.pe/file/MkEzIkxiY_mxCLtrAMd9HOwmc1fC2epQbOEeTEsAaDB55TkL1yjmrR2V8Acy-BeqepBqQ_kM-upXbHA7Lx0pwz-fz3TNneZrVxTvVCLOyr3Nr7e08U1WDe4gHZXcXkGcnCFh0LPVIC__kA_oolM2NFPYkzAA7J7ybNpaWgtX4NG1AXvKP53F5SKWJqHsFJtRUXuk9jy2kg99peEK8anhvFssYef27uBozvxrqrjSfNHxhPq90BB8wqyrnk2Ry8JRW4W9hpX4iL0teiDlJ2iOGCaw0fECLM2BPjRCMO8brDfvsTPpY4i8LadmybkBmjMHnTxN9jBLJJrLubtINQ88eQ.jpg",
+   "collection": false,
+   "key": "B0H51JZ6YK",
+   "score": 48,
+   "source": "HotDealsAQ/43221",
+   "photo_crop": "card",
+   "id": "41d2c03155",
+   "priority": 1,
+   "created_at": "2026-11-26T15:59:48.311850+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
     "title": "لانجتو كيبورد العاب MC68 RGB مع مفاتيح مغناطيسية",
     "price": 1150.0,
     "old_price": 1999.0,
@@ -375,6 +350,31 @@
    "id": "afa82db80b",
    "priority": 1,
    "created_at": "2026-11-26T14:21:35.741700+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
+    "title": "بي ايه بروتين من إمتنان بالفول السوداني - 70 جي ام",
+    "price": 44.0,
+    "old_price": 74.0,
+    "saving": 30.0,
+    "pct": 41,
+    "rating": null,
+    "coupon": null,
+    "extra": [],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B08WJNBRPN?tag=tahergalaleld-21",
+   "asin": "B08WJNBRPN",
+   "photo": "https://cdn4.telesco.pe/file/MIaPZDyPgAlyLvU0jDjyn3I8ieZJQBcdWpjBRKkLfrSSu10tHP7l7rysoSCdUS6Xf6NzLYvfRm9oZxvyiEItyAljMN5BNOYQtWdQtgPtFdtNq0ESaMPVTIhplmzKVbXxkP445JR0wlyDrEMxt0uWAtI-_BeAWN3CFjC2I48Z8SWiTW33iwc53coxexcepsWVIzGDllLukUVcz0EpdFVOGSCo-m4y5mHojO7mLUJxUSaN4Ow63SFkBKr3_2ZKBTShSADl-MPP2swgVDhGgmZPRsr9_W38obdrO9AMg2AEoxIe-lgTNBCkXwbur-1bExGSuubI3l6sCG0O2UusTAyCdQ.jpg",
+   "collection": false,
+   "key": "B08WJNBRPN",
+   "score": 46,
+   "source": "HotDealsAQ/43233",
+   "photo_crop": "card",
+   "id": "07f8d19423",
+   "priority": 1,
+   "created_at": "2026-11-26T16:30:06.153836+00:00"
   },
   {
    "kind": "offer",
@@ -604,6 +604,31 @@
   {
    "kind": "offer",
    "offer": {
+    "title": "سائل تنظيف فيبا متعدد الأغراض 700 غرام بنكهة التفاح الأخضر",
+    "price": 28.0,
+    "old_price": 44.0,
+    "saving": 16.0,
+    "pct": 36,
+    "rating": null,
+    "coupon": null,
+    "extra": [],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B08WJJP9CK?tag=tahergalaleld-21",
+   "asin": "B08WJJP9CK",
+   "photo": "https://cdn4.telesco.pe/file/sqqLt08US83cp6B3p3xFcMDJdQcAWPIAMAzhZOrMfxVZ9blUWgIce0gHm8eZYfvC-j2okdlKAP5etWFeu6yKLwDThYI5eNXurYU1rsqhSJtPMkkkdd8oSaKdrAMZUejceDg0pPi_n3MGJldY2LswmIQBhvvX-TXYGNnhWJtJgIFvXOvoF0m1NGlR_inMJLUT-gEzVhkid6zHxi5ixkrOqvNr9Z_qaAVM072L8BXP6Z-bET4qOxE1lR2L_AQoCKS7S_bMaGn5bhM-G5xwhHdJynmXbYXmdf1x9_x85lL-ZA2OZi6QCPT9hxg-bHf01Tr08_WIzjfQffEMMxpLKI6Mvw.jpg",
+   "collection": false,
+   "key": "B08WJJP9CK",
+   "score": 41,
+   "source": "HotDealsAQ/43210",
+   "photo_crop": "card",
+   "id": "cb8b9235ba",
+   "priority": 1,
+   "created_at": "2026-11-26T15:59:44.122663+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
     "title": "لانجتو كيبورد العاب مغناطيسية MC68 اصدار اي سبورتس RGB",
     "price": 1299.0,
     "old_price": 1999.0,
@@ -779,6 +804,31 @@
   {
    "kind": "offer",
    "offer": {
+    "title": "أقراص منظفات غسالة الأطباق من ماكسيل ماجيك - 15 قرص",
+    "price": 180.0,
+    "old_price": 268.0,
+    "saving": 88.0,
+    "pct": 33,
+    "rating": null,
+    "coupon": null,
+    "extra": [],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B08WJJFYT6?tag=tahergalaleld-21",
+   "asin": "B08WJJFYT6",
+   "photo": "https://cdn4.telesco.pe/file/G3RCA7y5HUpqY-zpoue6pj7UkmBp7w45jfdAhgKsoDkW0HgPQ2bBmtWVK0Tirtg24uXJYVEFDELTokuoGtarksrfCm5UjZte8BF_MJPbZECKoisFJ430yMy-YEj4TVcQp2cAS-VtGrv0tTtj0Ly2K9mjWg3cfr26SuLWTrziW-JXaKM7GJHo9KSEmPPLDplGg3X8q-lqE9kYu20MBST5cZ2NHwVM2fWKjDlh0Mln-55ONxlWDRX42fOdIytH1hIlaQTeA85Tl3nNigkcI64GRS1BjBh0NpxGNwypXkka2h8SZ4-W7G2nf0xwBe9ujRgAesUedLeAzvytLbvHBSbzeQ.jpg",
+   "collection": false,
+   "key": "B08WJJFYT6",
+   "score": 38,
+   "source": "HotDealsAQ/43229",
+   "photo_crop": "card",
+   "id": "279650d964",
+   "priority": 1,
+   "created_at": "2026-11-26T16:20:01.064426+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
     "title": "كوب ايفري داي من تانك 480 مل من الستانلس ستيل المعزول، يحافظ على المشروبات ساخنة، مانع للتسرب - كريمي",
     "price": 476.0,
     "old_price": 699.0,
@@ -800,6 +850,31 @@
    "id": "0cac36b9b6",
    "priority": 1,
    "created_at": "2026-11-26T12:50:51.523251+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
+    "title": "امتنان عسل حبة البركة 5.250 كجم",
+    "price": 1200.0,
+    "old_price": 1761.0,
+    "saving": 561.0,
+    "pct": 32,
+    "rating": null,
+    "coupon": null,
+    "extra": [],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B09RB97S97?tag=tahergalaleld-21",
+   "asin": "B09RB97S97",
+   "photo": "https://cdn4.telesco.pe/file/leDF0xbtioYLozjj1mSohlGH1Ql1xgSVZv-9m5IwULUnRYSvrz-TkF18jnSJLZWGOi4VcfN78yDsYccLXJk5_xvfSrZW_38GhWd7axoCrBsy31R458TuAg2iO6hI52UFRT3UlEUUyUpwhZaDWm1Z7whXxwlKoO4Txu_X8Vc4I-johmiz6fZCXL2HqfoBs2b1Mw1GoFlonWyTnDeRGlwLd4NbuQRFP7g0UBp_NVJCPQ-Qrry2qa2S_MU1rk2o9eam9UjJqYHbIlxDGKIN5KvMdzjjOOvU6_RzE--HmlFtzvpUS0fZDLWhLEmxV86ZdEi9XHZVCIKRUijsjlt1ujT3wQ.jpg",
+   "collection": false,
+   "key": "B09RB97S97",
+   "score": 37,
+   "source": "HotDealsAQ/43222",
+   "photo_crop": "card",
+   "id": "bb3af9a6e0",
+   "priority": 1,
+   "created_at": "2026-11-26T15:59:48.824038+00:00"
   },
   {
    "kind": "offer",
@@ -850,6 +925,31 @@
    "id": "3f73c12614",
    "priority": 1,
    "created_at": "2026-11-26T14:51:51.273971+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
+    "title": "قلم جاف برافو سليم 0.7 ملم أزرق، عبوة من 10 أقلام",
+    "price": 43.0,
+    "old_price": 62.0,
+    "saving": 19.0,
+    "pct": 31,
+    "rating": null,
+    "coupon": null,
+    "extra": [],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B0H9FGLMZS?tag=tahergalaleld-21",
+   "asin": "B0H9FGLMZS",
+   "photo": "https://cdn4.telesco.pe/file/HKTfKwkg_BM5e_2A-EjoZO81sYIAitrWBwKR8Tv1P6-mQ828eXRDfnCNFxR4O0FL9-YUY7yp7pznAQztl32eLZDoVDE_-HhJLisUM6QnplP1cfKPGc0Gv_JM9jPM8fsHakpaU9HWX7zNqXVmb5cVrMFPuYYmSLfLCH5rfDqIYXfztD1qW2o5ToEvIZKW7NnZX17csqTNjkllGcWjzlrlwVfksguL5f9yTxt5qbMOHNUd4qDWH6F2f7_aziF8Kwm7tH9mgJI_NzeGIMSu69vIHeGx2vh0zx-3lxONhO9glVbBxpI3UTtbqTcl_bPLZVrwN7IcMWSMpRyZpIcf7GRrcw.jpg",
+   "collection": false,
+   "key": "B0H9FGLMZS",
+   "score": 36,
+   "source": "HotDealsAQ/43232",
+   "photo_crop": "card",
+   "id": "fd28eac7ac",
+   "priority": 1,
+   "created_at": "2026-11-26T16:30:05.782351+00:00"
   },
   {
    "kind": "offer",
@@ -975,6 +1075,56 @@
    "id": "f3898526ec",
    "priority": 1,
    "created_at": "2026-11-26T14:21:38.223279+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
+    "title": "حياة مياه طبيعية 600 مل، عبوة من 20 زجاجة",
+    "price": 95.0,
+    "old_price": 135.0,
+    "saving": 40.0,
+    "pct": 30,
+    "rating": null,
+    "coupon": null,
+    "extra": [],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B0HMP7RNQB?tag=tahergalaleld-21",
+   "asin": "B0HMP7RNQB",
+   "photo": "https://cdn4.telesco.pe/file/fxgLdVWrjraWwy6T2GuPOF02pKFfgbJfPJ2fEmj7Y_BYqIhfy6wc2AOdJ9EaE5hbYeBNcwbn2uoZG6i7E7E8bQVBUAHqpHD49b4LIT_s6G_HgHxl_wqXBfwvMJwkxTDj49PZJ0tpR2TZtTor4En_yvdD-sZ3UjrYdMyw--6N4tHeRZcXtL2kvrgxiD1kFdWFyrCHwugzMP_cCrzuEz6lR8xJBOejF4376y654xvJrvvJYEF54LEGCKnA86vfAybEfJzqR0m9pONn-zo5ERnSSLUF5wcGvB3KMc9thvPyFXNqrK95S2ja9nesnuQ12VU7JOULjMXDIKFQD3eOkk1IWA.jpg",
+   "collection": false,
+   "key": "B0HMP7RNQB",
+   "score": 35,
+   "source": "HotDealsAQ/43215",
+   "photo_crop": "card",
+   "id": "8df5555b25",
+   "priority": 1,
+   "created_at": "2026-11-26T15:59:45.804149+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
+    "title": "هيرو زبدة الفول السوداني كرنشي - 300 جم",
+    "price": 91.0,
+    "old_price": 130.0,
+    "saving": 39.0,
+    "pct": 30,
+    "rating": null,
+    "coupon": null,
+    "extra": [],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B09KC5H164?tag=tahergalaleld-21",
+   "asin": "B09KC5H164",
+   "photo": "https://cdn4.telesco.pe/file/jimao3mweTskzHPmE4Q-1DYJd53Q8GzcLi2ynePNmwq7OzzrKRoMrk5TKJMO7pHDB_k32tTAXRligwsccPzY7O8MglMF-OANdcnK7kN2c634TF99dGtsHA1wjhegI9OOyFCaIV6nhO-EG0IOVWa16UcPnzQqSwb8a0VuMacnxTsn9qvqFku9SyG-kLJqqdF0ZQk4Qq1KyuNahLvmHcS0cBDwcOpYjy_rsPzHT9uhKMkwL-KW970xj_m4E6Fz67vevNuUn5q0wpyMS0oVuojfIWANdXt1b9dsRF_aXceNqRWhAeQ6X5qE1sDkWhIlXJBhEOmK_7NaaNn5zX1qm1Revw.jpg",
+   "collection": false,
+   "key": "B09KC5H164",
+   "score": 35,
+   "source": "HotDealsAQ/43216",
+   "photo_crop": "card",
+   "id": "e70f8957b2",
+   "priority": 1,
+   "created_at": "2026-11-26T15:59:46.318939+00:00"
   },
   {
    "kind": "offer",
@@ -1254,6 +1404,31 @@
   {
    "kind": "offer",
    "offer": {
+    "title": "تانك غلاية سيف تاتش، سعة 1.5 لتر، 1500 واط، رمادي، GS-EK2417G - ضمان لمدة عامين",
+    "price": 998.0,
+    "old_price": 1353.0,
+    "saving": 355.0,
+    "pct": 26,
+    "rating": null,
+    "coupon": null,
+    "extra": [],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B0FGXPS36J?tag=tahergalaleld-21",
+   "asin": "B0FGXPS36J",
+   "photo": "https://cdn4.telesco.pe/file/VCX7_TfqKmC7bySjwbXnXWXQ-m5SbNgiPeiy6obaXBNP5cWZ5xc-BYd1p-SlEIAQw47DThgPYyzQuLtUNsEMfEOACm4_xxj2ADl0wI-uxp-7B4LTsANyasxQq533SrxJlqfixuMiKNe6VWSNbQ-sLLhRf5RDNm_r1hHYbEVwSQP6uXUZRmhamiaE6LORQEGHYE6p62a74F2UPu2IECa5ZzYqOAtcJy9Wmf6SWzUZpWX3D86Lga4ktg_tI7pTVXS3NyNRMrmeuxhZkNZ3eYJMO_LcuxRnMjHOHJ-YLplVB29U0Uq9Kpv0J8iC5flmwnb5OhixzrG4Z25GT2bGb04hlQ.jpg",
+   "collection": false,
+   "key": "B0FGXPS36J",
+   "score": 31,
+   "source": "HotDealsAQ/43225",
+   "photo_crop": "card",
+   "id": "2c607893c6",
+   "priority": 1,
+   "created_at": "2026-11-26T15:59:49.898919+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
     "title": "مجموعة خشخيشات للأطفال من عمر 0 ​​إلى 6 أشهر، مع علبة تخزين وألعاب مخصصة لمرحلة التسنين، مناسبة البنات والأولاد الرضع بعمر 3 إلى 12 شهر، هدية مثالية للمواليد ال",
     "price": 231.0,
     "old_price": 310.0,
@@ -1279,227 +1454,53 @@
   {
    "kind": "offer",
    "offer": {
-    "title": "تلفاز A ذكي شاشة ليد 43 بوصة إصدار 2026، دقة FHD 1080 بكسل وتقنية HDR، بنظام جوجل تي في، خدمة كروم كاست مدمجة، تقنيات دولبي اوديو ودي تي اس: اكس (صوت محيطي رقمي",
-    "price": 9999.0,
-    "old_price": 12999.0,
-    "saving": 3000.0,
-    "pct": 23,
+    "title": "دقيق مصرى الضحى 1 كيلو",
+    "price": 37.0,
+    "old_price": 44.0,
+    "saving": 7.0,
+    "pct": 16,
     "rating": null,
     "coupon": null,
     "extra": [],
     "used": false
    },
-   "url": "https://www.amazon.eg/dp/B0GYZ47JW4?tag=tahergalaleld-21",
-   "asin": "B0GYZ47JW4",
-   "photo": "https://cdn4.telesco.pe/file/PkstsnQj81fMxuuUpJJ4t7Zyr1u20ijcfW3ahTQqyswO2gu_AKSnWMPHNkQBux2dvOKnIXh7y_aHQGTmoNSeA2z_ydQFAC4_T1Cd1P-WnFMsRMjlgzf-HzRz606j4_dDuH3E4ICnc3B46IzIyYvko20sEpSqdbIs7Gs8pGwro1v06zqGHjt3yUSeH3DLYLYU2mQBgI-f-PswsQUYP8_MCk5H0mLPH_UJF7BlZfq1WdJYru8UzUSbl3c_bs_R8QWzA_KGPhCMsWoQOsDeE6EPK0orI2emidc67ewlVTeUnsN5WtKFDsqVgIG9eWy7NDOstL1CdeOqfjrS8YiA8DoKNg.jpg",
+   "url": "https://www.amazon.eg/dp/B018SJBUIA?tag=tahergalaleld-21",
+   "asin": "B018SJBUIA",
+   "photo": "https://cdn4.telesco.pe/file/lqlDPjcS-xGTOBYTx0dAcj9_4_IFxaiVKy4CvTUGdi9iPRkN1r9gWGYI3bRDz7YVqPVJvDgXuGIeWa2HrZfnG-u-6ZgB_XeGcgyRQs7RWKWuwPlF7cyyj2mGol0KT9JHvvXHgP4u0WMpybu4NmK2TLik-698lX73GtqSNNpTm4KiDs00pAkAgXZ16xdzhSRv_tI52Hgs8Olj7NgafdMykCJtNXOYu4XvRJ-_pVE8JqVOBeWE8MIthVU_a8HDTxW8h9OT2SKDkw6eUhfNCDH-W49rwrMeVNkyKn_0E8W_vosc-07YEptgg46eGK_npPrA8jpaliRNTYhM7ENbSON5RA.jpg",
    "collection": false,
-   "key": "B0GYZ47JW4",
-   "score": 28,
-   "source": "HotDealsAQ/42973",
+   "key": "B018SJBUIA",
+   "score": 21,
+   "source": "HotDealsAQ/43236",
    "photo_crop": "card",
-   "id": "aab2ec6ff4",
+   "id": "cffef5453c",
    "priority": 1,
-   "created_at": "2026-11-26T08:05:25.971160+00:00"
+   "created_at": "2026-11-26T16:40:12.122195+00:00"
   },
   {
    "kind": "offer",
    "offer": {
-    "title": "شاى تلطيف الكحة من امتنان- 18 فتلة",
-    "price": 33.0,
-    "old_price": 43.0,
-    "saving": 10.0,
-    "pct": 23,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/dp/B08WJN8L32?tag=tahergalaleld-21",
-   "asin": "B08WJN8L32",
-   "photo": "https://cdn4.telesco.pe/file/izeJlN7Yu99LULoRFxpzJXLdLtEJVgQmwCzoFhwzkxX7Gcrp9pa3lrM8Nt8kfd22wUsi4EmKfVEeIfQuMZQEtQqEAkOmQRFZEejL1RNrqqGeyP3RBK-d9x_EnW_3uZGd9DwUxyTctk0C7xxGlhT9VsWjJ2RfiBcPmI2m2lQBrTrER__4LoajjorV3EdRhgARaym8ZKHsgR-MBJfC2tlW9oSXpEi1sdKcLwRVzKm9BMmh95YIKnC6Y9dhvNSIxJBYtbG0mXVZaTfESPo9EfAvzORrYlvyCHrH14A32FEVVd6AxQGDLIykAuY5Ft4RT3_vg2h35snv23EQd0kUAzvn4g.jpg",
-   "collection": false,
-   "key": "B08WJN8L32",
-   "score": 28,
-   "source": "HotDealsAQ/42977",
-   "photo_crop": "card",
-   "id": "fd69ae74b1",
-   "priority": 1,
-   "created_at": "2026-11-26T09:00:39.284384+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
-    "title": "محضر طعام بـ28 وظيفة من مينتا، 1000 وات، موديل FP141535A",
-    "price": 28.0,
+    "title": "تكيف هايسينس 1.5 حصان بارد ساخن انفرتر.. نازل ب 18981",
+    "price": 18981.0,
     "old_price": null,
     "saving": null,
-    "pct": 23,
+    "pct": null,
     "rating": null,
     "coupon": null,
-    "extra": [],
+    "extra": [
+     "البائع امازون .. ضمان 5 سنوات .. شحن مجانى"
+    ],
     "used": false
    },
-   "url": "https://www.amazon.eg/dp/B0FHQPN7XY?tag=tahergalaleld-21",
-   "asin": "B0FHQPN7XY",
-   "photo": "https://cdn4.telesco.pe/file/JalOqpBad2uyNgLQWYB40Lk2fJ_l_g7UmNN7Caigx8juJl0sFoqi1WsMGdosP4-AgOTEjqTByuEcZjzKoy23w-BKKG1s8PHv7K6IN1ZGB2w4MoqLS3KySJFWQyjw1vqJvJ7THDhnhzLdZ7SMMSw_eePmbS14O30XZ12tTRmbPjM0vdJlQtrFXGwWvhcjYHKgce-tV64deG1C78Bufj6Tbp1K8Y7Hb4fEdrP1lTDNqpEoRNYMg2KCjCVWb032yaG92bUp1tHoWW2zY9tE_8qhMCBzNaEChF4rvrdvvK76Ef8c1amZ4GrPuaChAM1ZthMEzM7ixIQ2F2kWMJC2XItb_Q.jpg",
+   "url": "https://www.amazon.eg/dp/B0B8X7WCW4?tag=tahergalaleld-21",
+   "asin": "B0B8X7WCW4",
+   "photo": "https://cdn4.telesco.pe/file/tAMhFPkgkOeuU4_DR5J-gccs_XgpXwwJGXTjYM5EQ85ilIn_I_2UMACm9AkOmHMaT_OKNQI-cO0sAVoy9KGUdr9x6eXeoKN32T3fefwuIBwJkvYBw-kmYG1V6ZDxe2EDs4Iht9TNAsi3iaR8EPxa6TcWRfWJTOEQVt7EabjcTCrOTNUcYrcLTO2DfmTB130c2wT5o6ZXhgYZd_OzBdcHi2mRzfjHjMmcZHk72IgvBQnA1d0w1zEFBLeUmZ9zR25WJjyoqP4FEjml9jnVDSG13F5tOd4DaoqDEogNlaL3I0L5ovBVVM-pxLuZx_6IxzUre8BHJeOYBi7qE7Ij939xXQ.jpg",
    "collection": false,
-   "key": "B0FHQPN7XY",
-   "score": 28,
-   "source": "HotDealsAQ/43108",
-   "photo_crop": "card",
-   "id": "61689bdc10",
+   "key": "B0B8X7WCW4",
+   "score": 5,
+   "source": "TechComics/14139",
+   "id": "715d93f9ed",
    "priority": 1,
-   "created_at": "2026-11-26T12:30:42.568028+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
-    "title": "باناسونيك فرن ميكروويف سولو NN-ST26SM، سعة 20 لتر، طاقة 800 واط، 51 قائمة تلقائية، قرص دوار 255 ملم، تشغيل سهل الغشاء، فضي",
-    "price": 5399.0,
-    "old_price": 6999.0,
-    "saving": 1600.0,
-    "pct": 23,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/dp/B0H4RQLG1Y?tag=tahergalaleld-21",
-   "asin": "B0H4RQLG1Y",
-   "photo": "https://cdn4.telesco.pe/file/EdJL7Bz97vFCAm8oEeToyQmy8JMXP8uydi9Ik8sQSf4BjBt2ZUv0FjS75NXpSgMOTsqH6PTi-zWW7J84IBoHGqHJz4cN8EmldtMMa7ng8m5kuH_63QKD155krKjnc0xqaUCE1Tz3X6fciNnUPaQ5c0hJF-5Kit78JgCU0c7tEm9saXJD5KJX71gXDySTfHASfTWPpy5uhZW94kui08k21LiyQOmZRL0Z_tLpqBa2JSpJZ40i1rfTxMdikxchXiXhUASv7Pw3bMPk5Gjc2N-Gt3x8igI_d1WuCLjrTmSOImVz0WSGc9z7D7Dxed7sfUSzqs4ELbTZiVyhGl9JFnBGoA.jpg",
-   "collection": false,
-   "key": "B0H4RQLG1Y",
-   "score": 28,
-   "source": "HotDealsAQ/43167",
-   "photo_crop": "card",
-   "id": "a69fd68bbb",
-   "priority": 1,
-   "created_at": "2026-11-26T14:21:38.008574+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
-    "title": "مكفيتيز بسكويت دايجستيف لايت 384 جم",
-    "price": 54.0,
-    "old_price": 70.0,
-    "saving": 16.0,
-    "pct": 23,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/dp/B07MB7PHF7?tag=tahergalaleld-21",
-   "asin": "B07MB7PHF7",
-   "photo": "https://cdn4.telesco.pe/file/oDuxs8vyPVImlMGv00u_BvM5Xincpx5XVAHjctU9GY6OkUojhKw0UZzB17c7T7XFt7hitgUCPnyJn8XnciBVQZMyqgnj0ofWyZTagwPKIBNWhFGW_fsp7Q7HfacUk2yBDGXFEY-XBygMOJOrM3TAp7xhTDFbkl1VE_Z-ljDrquO4yP06fpXDibFsJ_4PU6yghnYyxhsGkntiuC8ytIvSmtctV46EH_zHZQQg3OPihlsoiV0x-lMNHoXe9vz4cnOI3fnQriGgBcaY6DTofDIbKul-BA_Pnkq1GQSGIIxdfcAh2wWX7mxKL5ye5vh8edGnyCXPqxwVb0zSeu8ZP8_wog.jpg",
-   "collection": false,
-   "key": "B07MB7PHF7",
-   "score": 28,
-   "source": "HotDealsAQ/43171",
-   "photo_crop": "card",
-   "id": "1b82b1db1b",
-   "priority": 1,
-   "created_at": "2026-11-26T14:31:43.048796+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
-    "title": "موبايل جالاكسي A57 شبكة الجيل الخامس 5G بنظام أندرويد بسعة تخزينية 256 جيجا وذاكرة رام 8 جيجا و6 ترقيات لنظام التشغيل وشاشة كبيرة وكاميرا 50MP وبطارية تدوم طويل",
-    "price": 26999.0,
-    "old_price": 35060.0,
-    "saving": 8061.0,
-    "pct": 23,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/dp/B0GSW36PDX?tag=tahergalaleld-21",
-   "asin": "B0GSW36PDX",
-   "photo": "https://cdn4.telesco.pe/file/jzaTcGZvGW1r8w9NExhfETRwuvRXCBvgXMhprAVGsSnzyYvVLjro2rnpkj2Up0euU7EgJpIVqwFFNpn6ah26D1lZIueWWIJdFx0gLQkoCNklacPE-mZVIEB01rHqepK167W42OaSGgfdKrHZi3sPDnD4mZZHg2iTpFkM_LWLbnmhmwTspdYhebOSVML69HXZXDV9VnNSMnd7i7VmDRqQqXTiF5VYoo1hrU7_lsFTag3GEsR17uS6P9TQDLCqe3-V_Uz7bTqOxgN4rvuxALFZds5lefnhfsfBeWDc7_1uiW-SjFdzHFZlvR-5fpjn6UVxNKMJZ1Go8wTrBSJhRdMhdQ.jpg",
-   "collection": false,
-   "key": "B0GSW36PDX",
-   "score": 28,
-   "source": "HotDealsAQ/43180",
-   "photo_crop": "card",
-   "id": "693363333e",
-   "priority": 1,
-   "created_at": "2026-11-26T14:41:48.496913+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
-    "title": "بطاقات فلاش تعليمية للأطفال باللغة الإنجليزية واللغة العربية لتعلم الحروف العربية من مينمر، 224 كلمة أساسية مرئية، ألعاب الأطفال الصغار لتعلم اللغة العربية",
-    "price": 133.0,
-    "old_price": 170.0,
-    "saving": 37.0,
-    "pct": 22,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/dp/B0BZTVJHWJ?tag=tahergalaleld-21",
-   "asin": "B0BZTVJHWJ",
-   "photo": "https://cdn4.telesco.pe/file/Zy9e0mB9qHhDHyxomUZT1RZAxRdTx0gPh10UJKiDMP7VkWFQV9n26UzOoJJ_2JjF2z_hp1cdrJVdQYF8HDRcZNHmrbprsTnCGuYqZQTM-yBcrEySqC4QzHSM984ArD0cwcl8MTp9BaSVHO5COBiOS5a5GmQh_ePrPV-C2bg0Q2r8D77ytDhOfNjr-CUg75LG6etSP-ejFGu_EUiUXp9K_-S9Rak9JHQjI8N-hB1qVmFgUfBLm779L-63tcqZNIQm20cmv8HEJZO-ZKq8ZP22WrwOg2WniVuRPWf_NrowpPCBcEj_gnIgNeL8UmNBuVNM3uOIzpsaxAx1A-zghVwTzA.jpg",
-   "collection": false,
-   "key": "B0BZTVJHWJ",
-   "score": 27,
-   "source": "HotDealsAQ/43116",
-   "photo_crop": "card",
-   "id": "f148779d3e",
-   "priority": 1,
-   "created_at": "2026-11-26T12:40:47.723950+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
-    "title": "كرياتين بدون نكهة من ريدريكس، 150 جم",
-    "price": 340.0,
-    "old_price": 438.0,
-    "saving": 98.0,
-    "pct": 22,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/dp/B0DXV8YW8L?tag=tahergalaleld-21",
-   "asin": "B0DXV8YW8L",
-   "photo": "https://cdn4.telesco.pe/file/jmJKpILSNKlNxm1vMHaxrtHUpnR_yFT_6gLOi0Hmvt2fJEQ4p6PqpctYesZstbeCBRCS8ATy2MR8nnng7FcoEUZPA9pi_iWqe6cjfJxIN8Yk6gIDg2wkMm32-iJOl2LkOLE_vLVsYdMVascbI9eoiF6QWwtqEbBwnt2PxWh_SXUL5RcsdoAM69gK341ZgWQAPdypWIheu7YibV85-h1fQHJtf2bn7dOvIzThwzPIXshRwV1_o89Z3H3YVBaIVcFTFPgga_xFS_T0_VR1Ctzm4agi87SuVQCECEIiOH3-PA-LHtV6sxOIvCm8NjRkxlTCCbXrq-g-0Q_Jp3Zzh4ckDw.jpg",
-   "collection": false,
-   "key": "B0DXV8YW8L",
-   "score": 27,
-   "source": "HotDealsAQ/43190",
-   "photo_crop": "card",
-   "id": "0ce160fd83",
-   "priority": 1,
-   "created_at": "2026-11-26T15:01:55.937709+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
-    "title": "خلاط يدوي توربو بلس بقدرة 1000 وات من مينتا، موديل HB111438A",
-    "price": 1794.0,
-    "old_price": 2266.0,
-    "saving": 472.0,
-    "pct": 21,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/dp/B0DVT36SD8?tag=tahergalaleld-21",
-   "asin": "B0DVT36SD8",
-   "photo": "https://cdn4.telesco.pe/file/r2dXGlTPCjX6FsHv3n-EJNTHW_avjSF82ux68j59VWIopMxdTJToMOyK2KOJUGR7Ccl9N18JkPGppABR9hKfpUIfmVJix2oxG73THdsj6CoXoOzzZXe4rRR4EcdSbU9B8nEQQ9XPVrcqMoQVe0IGgDobYMVGvFQ0xAXPLwBl2bnUkGjjNdPYYa-R_GFIL93BNMkjfyewxDcViv_webwNuZ7lch6dy4lQ2LqfVYtnMnVK8jpPqLyuFFhm1cg5M7AbbaGLYfpcr7fNJGtQyR_4imNXLSzPtN6P0HSR9JPoabnPqj_r8lSBKYtF2JbGWjFQA4rPLzv_DhxRWUynWpDoaA.jpg",
-   "collection": false,
-   "key": "B0DVT36SD8",
-   "score": 26,
-   "source": "HotDealsAQ/42974",
-   "photo_crop": "card",
-   "id": "c5887a0a6a",
-   "priority": 1,
-   "created_at": "2026-11-26T08:05:26.147438+00:00"
+   "created_at": "2026-11-26T16:50:19.334873+00:00"
   }
  ],
  "posted": {
@@ -1746,18 +1747,34 @@
   "B0DL7D5DQF": {
    "at": "2026-11-26T15:09:59.991289+00:00",
    "price": 1794.0
+  },
+  "B0DG6WZSJM": {
+   "at": "2026-11-26T15:59:53.146783+00:00",
+   "price": 157.0
+  },
+  "B00BX631F6": {
+   "at": "2026-11-26T16:15:58.879397+00:00",
+   "price": 112.0
+  },
+  "B0DVCDC913": {
+   "at": "2026-11-26T16:32:09.220627+00:00",
+   "price": 30.0
+  },
+  "B0CHXLNJPD": {
+   "at": "2026-11-26T16:48:17.118582+00:00",
+   "price": 135.0
   }
  },
  "day": {
   "date": "2026-11-26",
-  "count": 21
+  "count": 25
  },
- "last_post_at": "2026-11-26T15:09:59.991310+00:00",
+ "last_post_at": "2026-11-26T16:48:17.118627+00:00",
  "last_auto_search_at": "2026-11-25T17:18:33.378212+00:00",
  "api": {
   "ok": false,
-  "error": "AccessDeniedError: Access denied for the requested operation - AssociateNotEligible; Your account does not currently meet the eligibility requirements. [request id: 009c4cea-f5e5-41da-abad-7178b2a77cb3]",
-  "checked_at": "2026-11-26T14:21:40.164362+00:00"
+  "error": "AccessDeniedError: Access denied for the requested operation - AssociateNotEligible; Your account does not currently meet the eligibility requirements. [request id: 5456fa34-61e9-4760-bcf9-3ed0de2237f3]",
+  "checked_at": "2026-11-26T15:59:52.024422+00:00"
  },
  "notified": {
   "api_down": "2026-11-25T19:34:46.904569+00:00",
@@ -1766,22 +1783,6 @@
  "paused": false,
  "commands_set": true,
  "log": [
-  {
-   "at": "2026-11-25T11:45:19.500658+00:00",
-   "wa": "نص التمن وأقل! خصم 50% 😳\n\nالمنتج: *نوفال مروحة ستاند كهربائية بـ3 سرعات من سبرينج بلس، 18 انش*\nالسعر دلوقتي: *1,169 جنيه* بدل ~2,349~ جنيه\nهتوفر 1,180 جنيه (خصم 50%) 💸\n\nاطلبه من هنا 👇\nhttps://www.amazon.eg/dp/B0GPWSP4MN?tag=tahergalaleld-21\nالسعر وقت النشر وممكن يتغير في أي وقت\nتابعنا على كل المنصات: @mr.taher.reviews"
-  },
-  {
-   "at": "2026-11-25T12:01:30.089575+00:00",
-   "wa": "خصم 71% على أمازون مصر، الحق قبل ما يخلص 🔥\n\nالمنتج: *حذاء دي ان ايه الترا دريم للرجال من اديداس*\nالسعر دلوقتي: *1,974 جنيه* بدل ~6,879~ جنيه\nهتوفر 4,905 جنيه (خصم 71%) 💸\n\nاطلبه من هنا 👇\nhttps://www.amazon.eg/dp/B0FCHY49TT?tag=tahergalaleld-21\nالسعر وقت النشر وممكن يتغير في أي وقت\nتابعنا على كل المنصات: @mr.taher.reviews"
-  },
-  {
-   "at": "2026-11-25T12:17:33.706109+00:00",
-   "wa": "نص التمن وأقل! خصم 50% 😳\n\nالمنتج: *شامبو كابيكسي مضاد للقشرة للشعر*\nالسعر دلوقتي: *160 جنيه* بدل ~320~ جنيه\nهتوفر 160 جنيه (خصم 50%) 💸\n\nاطلبه من هنا 👇\nhttps://www.amazon.eg/dp/B0HBX8YCQ2?tag=tahergalaleld-21\nالسعر وقت النشر وممكن يتغير في أي وقت\nتابعنا على كل المنصات: @mr.taher.reviews"
-  },
-  {
-   "at": "2026-11-25T12:33:39.406861+00:00",
-   "wa": "لقطة النهارده: خصم 56% 🔥\n\nالمنتج: *ماكينة تحضير القهوة التركية اوتوماتيك من تورنيدو، سعة 660 مل، قدرة 1470 وات، لون بني× اسود، مع خزان مياه TCME-100D-PRO…*\nالسعر دلوقتي: *3,999 جنيه* بدل ~8,999~ جنيه\nهتوفر 5,000 جنيه (خصم 56%) 💸\n\nاطلبه من هنا 👇\nhttps://www.amazon.eg/dp/B0101RYQOW?tag=tahergalaleld-21\nالسعر وقت النشر وممكن يتغير في أي وقت\nتابعنا على كل المنصات: @mr.taher.reviews"
-  },
   {
    "at": "2026-11-25T12:49:43.096005+00:00",
    "wa": "لقطة النهارده: خصم 55% 🔥\n\nالمنتج: *تيشرت للرجال من استك، تصميم مطبوع بقصة عادية عصرية (عبوة من قطعة واحدة)*\nالسعر دلوقتي: *288 جنيه* بدل ~640~ جنيه\nهتوفر 352 جنيه (خصم 55%) 💸\n\nاطلبه من هنا 👇\nhttps://www.amazon.eg/dp/B0D6712BKV?tag=tahergalaleld-21\nالسعر وقت النشر وممكن يتغير في أي وقت\nتابعنا على كل المنصات: @mr.taher.reviews"
@@ -2005,11 +2006,27 @@
   {
    "at": "2026-11-26T15:09:59.549899+00:00",
    "wa": "نص التمن وأقل! خصم 56% 😳\n\nالمنتج: *حذاء بارك اس تي 2.0 للرجال من اديداس*\nالسعر دلوقتي: *1,794 جنيه* بدل ~4,049~ جنيه\nهتوفر 2,255 جنيه (خصم 56%) 💸\n\nاطلبه من هنا 👇\nhttps://www.amazon.eg/dp/B0DL7D5DQF?tag=tahergalaleld-21\nالسعر وقت النشر وممكن يتغير في أي وقت\nتابعنا على كل المنصات: @mr.taher.reviews"
+  },
+  {
+   "at": "2026-11-26T15:59:52.641895+00:00",
+   "wa": "نص التمن وأقل! خصم 65% 😳\n\nالمنتج: *جل للوجه من ليلك مرطب للبشرة الحسّاسة، 100 مل*\nالسعر دلوقتي: *157 جنيه* بدل ~449~ جنيه\nهتوفر 292 جنيه (خصم 65%) 💸\n\nاطلبه من هنا 👇\nhttps://www.amazon.eg/dp/B0DG6WZSJM?tag=tahergalaleld-21\nالسعر وقت النشر وممكن يتغير في أي وقت\nتابعنا على كل المنصات: @mr.taher.reviews"
+  },
+  {
+   "at": "2026-11-26T16:15:58.214276+00:00",
+   "wa": "خصم 55% على أمازون مصر، الحق قبل ما يخلص 🔥\n\nالمنتج: *رابوو فأرة سلكي متوافقة مع بي سي ولابتوب - N1200*\nالسعر دلوقتي: *112 جنيه* بدل ~250~ جنيه\nهتوفر 138 جنيه (خصم 55%) 💸\n\nاطلبه من هنا 👇\nhttps://www.amazon.eg/dp/B00BX631F6?tag=tahergalaleld-21\nالسعر وقت النشر وممكن يتغير في أي وقت\nتابعنا على كل المنصات: @mr.taher.reviews"
+  },
+  {
+   "at": "2026-11-26T16:32:08.307968+00:00",
+   "wa": "لقطة النهارده: خصم 55% 🔥\n\nالمنتج: *صابون اليدين المرطب بحماية فائقة متعادل الحموضة من ديفا، سعة 500 مل*\nالسعر دلوقتي: *30 جنيه* بدل ~66~ جنيه\nهتوفر 36 جنيه (خصم 55%) 💸\n\nاطلبه من هنا 👇\nhttps://www.amazon.eg/dp/B0DVCDC913?tag=tahergalaleld-21\nالسعر وقت النشر وممكن يتغير في أي وقت\nتابعنا على كل المنصات: @mr.taher.reviews"
+  },
+  {
+   "at": "2026-11-26T16:48:16.532182+00:00",
+   "wa": "خصم 53% على أمازون مصر، الحق قبل ما يخلص 🔥\n\nالمنتج: *جل مائي واقي من الشمس بيور تاتش من فاكيشن، 60 مل*\nالسعر دلوقتي: *135 جنيه* بدل ~288~ جنيه\nهتوفر 153 جنيه (خصم 53%) 💸\n\nاطلبه من هنا 👇\nhttps://www.amazon.eg/dp/B0CHXLNJPD?tag=tahergalaleld-21\nالسعر وقت النشر وممكن يتغير في أي وقت\nتابعنا على كل المنصات: @mr.taher.reviews"
   }
  ],
  "sources": {
-  "HotDealsAQ": 43201,
-  "TechComics": 14134,
+  "HotDealsAQ": 43237,
+  "TechComics": 14139,
   "amdaata": 7741,
   "yahiaashry2026": 411
  }
