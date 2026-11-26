@@ -379,31 +379,6 @@
   {
    "kind": "offer",
    "offer": {
-    "title": "طقم بنسة حديد ببوز طويل للقطع القطري من مستر لايت توتال (كبيرة، فضي)، 3 قطع",
-    "price": 287.0,
-    "old_price": 453.0,
-    "saving": 166.0,
-    "pct": 37,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/dp/B07ZXCPQYT?tag=tahergalaleld-21",
-   "asin": "B07ZXCPQYT",
-   "photo": "https://cdn4.telesco.pe/file/fFLTPbrZxCUXw1Zbphn72suGlGfhq7MJh9lNn5poJ0NeeEwyd40_H5l-LgrFD_nTQEE0UmphAjYcAlreK026LZZ-wJqLWlPSi77QdOB9v8BuxqkUO0bx2Y4b6ISuaNvtxk5BtRtrvVVHRM2tafO3OC-MW41LuNlyNE5vLlpuL3hbG8DwoSpRWbNI3jHHZl_lMgqnk0QKLaycOPV-fY-yYO7uwf-e_-X_UAciBJa3jih4O-jkBM9la2jgj-Vs1yAsz8oHmHofUvFbHVp0gcFbkD-ERliIslF4heEty4dlZXoo3sP6u91th_bPTx9zdA7em_Lgbo7BEI0jcPAVto18YQ.jpg",
-   "collection": false,
-   "key": "B07ZXCPQYT",
-   "score": 42,
-   "source": "HotDealsAQ/42893",
-   "photo_crop": "card",
-   "id": "ae16b3ec9a",
-   "priority": 1,
-   "created_at": "2026-11-25T20:04:55.414360+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
     "title": "ليسترين توتال كير لحماية الأسنان، 250 مل، غسول فم يومي بالفلورايد بستة فوائد، طعم أكثر اعتدالًا، نعناع ناعم، يساعد على منع التسوس، يحافظ علي مينا الأسنان، يحافظ",
     "price": 86.0,
     "old_price": 137.0,
@@ -725,31 +700,6 @@
    "id": "8cc366a3d0",
    "priority": 1,
    "created_at": "2026-11-25T23:44:19.714189+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
-    "title": "ماكينة حلاقة احترافية V-987 بشاشة رقمية ووظيفة تربو مع قفل للسفر، محرك تيار مستمر 7000 دورة في الدقيقة مع شفرة من الفولاذ المقاوم للصدأ والسيراميك، وقت تشغيل 40",
-    "price": 600.0,
-    "old_price": 797.0,
-    "saving": 197.0,
-    "pct": 25,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/dp/B0D9PB1VWC?tag=tahergalaleld-21",
-   "asin": "B0D9PB1VWC",
-   "photo": "https://cdn4.telesco.pe/file/a4s4KdtAxXw75UmR9rpf-sP3PN-qqI4y3QKQl_ion_qmUDoaX5t0Uii3vRVtPcSMandpLP24EP_PDNUMx-49YKE_KrStlpn_OhVCO_LPPHB1uiBx-xvVBqLfxfpfcvpp0Z041Ss1zVwLk5P7zcdHBZYt7faEDzKOpjb9krwupvd4-IBBmByUChiX8XSDPSCjF_28BAOELQ91pez30dX73GfLc79Lg1KUncbg3KgvU3FD7YT6-qF0T_6OiEyeBS0pmGvbvHeNiWlzDdYarGB2T3Kd7jUsu38z2B7hCBKVmKkvbHTgjc7cGYjPCLhjQOGB3Qkpfqf--3D36rhr27NsJw.jpg",
-   "collection": false,
-   "key": "B0D9PB1VWC",
-   "score": 30,
-   "source": "HotDealsAQ/42904",
-   "photo_crop": "card",
-   "id": "496ca77a27",
-   "priority": 1,
-   "created_at": "2026-11-25T20:39:40.515345+00:00"
   },
   {
    "kind": "offer",
@@ -1093,8 +1043,8 @@
  "last_auto_search_at": "2026-11-25T17:18:33.378212+00:00",
  "api": {
   "ok": false,
-  "error": "AccessDeniedError: Access denied for the requested operation - AssociateNotEligible; Your account does not currently meet the eligibility requirements. [request id: 7301fe7d-ada3-4924-85d4-8e20cfb9fa97]",
-  "checked_at": "2026-11-26T02:54:02.590070+00:00"
+  "error": "AccessDeniedError: Access denied for the requested operation - AssociateNotEligible; Your account does not currently meet the eligibility requirements. [request id: 0b095f8d-03bc-4414-a07e-a18cb3cc08cb]",
+  "checked_at": "2026-11-26T03:57:20.049944+00:00"
  },
  "notified": {
   "api_down": "2026-11-25T19:34:46.904569+00:00",
