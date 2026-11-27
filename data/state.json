@@ -876,27 +876,27 @@
   {
    "kind": "offer",
    "offer": {
-    "title": "مفتاح 8 منافذ 10/100/1000 ميجابت في الثانية من ميركوسيس، موديل MS108G",
-    "price": 419.0,
-    "old_price": 698.0,
-    "saving": 279.0,
-    "pct": 40,
+    "title": "كريم مرطب ماليندا للجنسين من بلوبيل - 120 جرام",
+    "price": 236.0,
+    "old_price": 399.0,
+    "saving": 163.0,
+    "pct": 41,
     "rating": null,
     "coupon": null,
     "extra": [],
     "used": false
    },
-   "url": "https://www.amazon.eg/dp/B07RGY1NBY?tag=tahergalaleld-21",
-   "asin": "B07RGY1NBY",
-   "photo": "https://cdn4.telesco.pe/file/E3VaD1wdpyPowJQ-9R0CiZ5mQuem1Cpd8H6f2m-FEryNALYyJqyiFnOh7CF2wkeZqCIU5GLYLEpAZEM8qRnsnAHQB-9KgtA3FeLmF4DMiiMGtCPwTEkeQBiUhkhoLINkHxk2IL51islaeRKrtH4Q52TBHNXKaPdcoNvNrv8ogYrcjBhUF4MgOpGkWUrJ5NoDO6bNALPMhvVV0oNnc2iMYhG28xyL1pwsu_Vw_fG4tfW2Srq0xVmntvJyjHx4sTaTLlPpp0eSai-UrPmiKhw-PnM2U99gVkBGKDUAgVcZd9EoxF6QCfKm7qvk_eECjlmhodSjObOQTaNR0vRUVIIzIQ.jpg",
+   "url": "https://www.amazon.eg/dp/B0C1GWVF81?tag=tahergalaleld-21",
+   "asin": "B0C1GWVF81",
+   "photo": "https://cdn4.telesco.pe/file/MVhMJtBWIMMYtWrDh9r-ezxugDHgNRELR53n_08QBxpZAIAjlMA8XXIkKYUuf8g-hwQDCxyE83NKGGdZYEn-wh8N7Efyo6tEFfxQt4jCn4CxoNJIx_sm4YxJ7FkNTr9IzDgKs8K2iIzaAccuZZdnxVWX2KYzfFlT16aEeDHiQwW-Jpc4JYCH0rq86izLfMlidJ4t_nWDabmftfySKcwYjZykM5L6LkwCqPHD3n7l8IopeYkSfYOiclj7SSd8WaEf9BYjsdCu8JpNcKwFIIh66Q2SeRj5XP1w5GTne7EIICC29yEsCbu8Sd1CiCm1HeSamLDC86ZgsKBELpVFM_bBqg.jpg",
    "collection": false,
-   "key": "B07RGY1NBY",
-   "score": 45,
-   "source": "HotDealsAQ/43345",
+   "key": "B0C1GWVF81",
+   "score": 46,
+   "source": "HotDealsAQ/43658",
    "photo_crop": "card",
-   "id": "567031d2e9",
+   "id": "0a103f9ec4",
    "priority": 1,
-   "created_at": "2026-11-26T21:53:19.127642+00:00"
+   "created_at": "2026-11-27T05:10:48.785055+00:00"
   },
   {
    "kind": "offer",
@@ -1689,8 +1689,8 @@
  "last_auto_search_at": "2026-11-25T17:18:33.378212+00:00",
  "api": {
   "ok": false,
-  "error": "AccessDeniedError: Access denied for the requested operation - AssociateNotEligible; Your account does not currently meet the eligibility requirements. [request id: 7ce9e4e9-4507-4d1f-bb8a-f71c6be9eb1c]",
-  "checked_at": "2026-11-27T03:58:56.345935+00:00"
+  "error": "AccessDeniedError: Access denied for the requested operation - AssociateNotEligible; Your account does not currently meet the eligibility requirements. [request id: 6bff6a6e-041c-40c7-896d-43776541ef08]",
+  "checked_at": "2026-11-27T05:10:50.951183+00:00"
  },
  "notified": {
   "api_down": "2026-11-26T20:04:18.401935+00:00",
@@ -1941,8 +1941,8 @@
   }
  ],
  "sources": {
-  "HotDealsAQ": 43656,
-  "TechComics": 14232,
+  "HotDealsAQ": 43658,
+  "TechComics": 14233,
   "amdaata": 7843,
   "yahiaashry2026": 411
  }
