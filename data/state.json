@@ -28,6 +28,33 @@
   {
    "kind": "offer",
    "offer": {
+    "title": "⭕️عرض ممتاز الحقه 🔥",
+    "price": 369.0,
+    "old_price": null,
+    "saving": null,
+    "pct": 49,
+    "rating": null,
+    "coupon": null,
+    "extra": [
+     "شاحن سيارة باور درايف بقدرة 30 واط مع PPS بمنفذين USB نوع سي فائقي السرعة يشحن جهازين في الوقت نفسه متوافق مع آيفون وآيباد وايربودز وجالكسي "
+    ],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/dp/B0DBGCSSP7?tag=tahergalaleld-21",
+   "asin": "B0DBGCSSP7",
+   "photo": "https://cdn4.telesco.pe/file/U0KTFGTMRUCEBz6pElmnqRAbVslS2hmqEhS4YA9CTzsSaXHwqTT6sDW220egr9EEM5xwlDn7Je4ObMRblV5D__PUlLg-oce0YOlZymEXH4MOlWRbiT8BSW7ATOpXwK7C5ve4FqsOadvCb-3gR5fAxmgVWR22Qf5_-sRUffaVck9I5lXe35wmqJQlKzbzVQcuyULAq_1Ka4da9ZLOy8kznIjToFnuJdECVeZZ8QCj9ObK5NgUy_GIf_-ZYTa6rLtyjlFBSUBu0tzjYigH_73fkqrRN5sLag56jk6eNatUmaO6wvdwd9GZXPTO_8qKbiMVRCrzRJjJfGHk1X9g3lZtvw.jpg",
+   "collection": false,
+   "key": "B0DBGCSSP7",
+   "score": 54,
+   "source": "HotDealsAQ/44171",
+   "photo_crop": "card",
+   "id": "5a80c676f0",
+   "priority": 1,
+   "created_at": "2026-11-28T00:02:13.879123+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
     "title": "Fire Wood بنطلون كارجو للرجال بجيوب جانبية متعددة وخصر مطاطي وأساور مطاطية",
     "price": 219.0,
     "old_price": 400.0,
@@ -123,56 +150,6 @@
    "id": "e163c6bbef",
    "priority": 1,
    "created_at": "2026-11-27T19:36:13.425422+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
-    "title": "قلاية تعمل بدون زيت للطهي المزدوج ديجيتال 2500 واط 8 لتر مزودة بسلتي طهي منفصلتين وتقنية تدوير الهواء وحماية من الحرارة الزائدة سهلة التنظيف تركيا THF-2508DU-BS",
-    "price": 5849.0,
-    "old_price": 10137.0,
-    "saving": 4288.0,
-    "pct": 42,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/dp/B0FM4GVBJ2?tag=tahergalaleld-21",
-   "asin": "B0FM4GVBJ2",
-   "photo": "https://cdn4.telesco.pe/file/m5RFHXt15wIRkqvdP-Xv-IhA_dfR-xe43EImXvmrjBpigByNeEan3GjjnCVANDrS9Tdoo471i1_1w3hxtOsReeiYM9baF4GZAvUepmay2QShyo3UnBZOuoOv9vBmGXcyuCxa0PyXvRqwPGvN0kugjtMcNOTzP2RGoDx1tH5g7kcfuEl-1ZtR19yXXTdFx8u_S_tciwxT3AUDmA-7UgrZr9ygwZzR-0Z9-986B-Dg1NHHvQv8sSQN_nSRE2wawsGLV-6bEEWt306T2djBrpzuqfJDQqFWx88pFn9No-2e47noINcuBQ4SukGlE-tMC8AvbTR4li--V1ImyfkwbjCjnQ.jpg",
-   "collection": false,
-   "key": "B0FM4GVBJ2",
-   "score": 47,
-   "source": "HotDealsAQ/43927",
-   "photo_crop": "card",
-   "id": "a7f277d192",
-   "priority": 1,
-   "created_at": "2026-11-27T16:18:11.039824+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
-    "title": "مج قهوة حراري للسفر معزول بشفط الهواء بطبقة فولاذ مقاوم للصدأ مزدوجة مع مقبض، كوب حراري محمول بفتحة واسعة مع غطاء، سعة 380 مل، لون اسود",
-    "price": 99.0,
-    "old_price": 167.0,
-    "saving": 68.0,
-    "pct": 41,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/dp/B0CD3ZK7DR?tag=tahergalaleld-21",
-   "asin": "B0CD3ZK7DR",
-   "photo": "https://cdn4.telesco.pe/file/oxs3EMC1uzW6TmJZdTyuXXvYxf5Y5ASYb9KNswvoclbTwMzTrHYr1uEOgP4czCX1J2A-bZssD_c0rTAS95DfaWFHK_WU-ccNKyzh2_QLMwjL-_Oq_sfCQZUMxZm4dt8b1VxHxlWefdoLRFWNJFzoGi8NrqQyfgtGmTTQLlkghFQe1OhgxZsH-CAeeJ_m0V0inlhmVWoztxUHEjfO0RUAODFNmGvq1HfO3qpwsav-Ryx1yElfTlaWskva2DiF5oxYl4uJaNEyZnbtiXASpBXPqXSosLwF8TCzgsvzHQSgUHgeuF53ykp7kY4dXv0kcHnn7lyPu0SdpOHrReoN02MzwA.jpg",
-   "collection": false,
-   "key": "B0CD3ZK7DR",
-   "score": 46,
-   "source": "HotDealsAQ/43921",
-   "photo_crop": "card",
-   "id": "93672bcc09",
-   "priority": 1,
-   "created_at": "2026-11-27T16:08:07.350804+00:00"
   },
   {
    "kind": "offer",
@@ -355,31 +332,6 @@
   {
    "kind": "offer",
    "offer": {
-    "title": "بوكسر قطن بنسبة قطن عالية بقصة عادية للرجال من ال سي وايكيكي، عبوة من 3 قطع",
-    "price": 299.0,
-    "old_price": 489.0,
-    "saving": 190.0,
-    "pct": 39,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/dp/B0HFQ1B8D4?tag=tahergalaleld-21",
-   "asin": "B0HFQ1B8D4",
-   "photo": "https://cdn4.telesco.pe/file/ID1iy5UrLnniO6wMASsBL08I6SwUH1M4QSEL38aAc8bFIurMkcprgagWMJQe3vPhSluppMrUR4gPJOdqEVxQ7_Wm4JVWuP-Kbp0-dObI5yULUBydP1BQCAyiSrH1z4fSknpDiEza2sQEsd1xHkyEZia3T9xzsHVSSXRgmYRh-3Qfrvse4WURi7sLLXk6ytg7vel5BBARFp4f2_v2EK2S3Rq0g1dUFJegMZql8c9B4-H3oidel5ZndAcWwc6fTeD5VwdVqvorbucRSk6w0PAqCXOtjJYfqOBN4bBtQRZ62C7Wok9cJF3kXXPjNiWfdYYnHtqTAmXoEeGmwOOqOpxltQ.jpg",
-   "collection": false,
-   "key": "B0HFQ1B8D4",
-   "score": 44,
-   "source": "HotDealsAQ/43943",
-   "photo_crop": "card",
-   "id": "0c4a7251d7",
-   "priority": 1,
-   "created_at": "2026-11-27T16:28:15.550967+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
     "title": "سماعات رأس لاسلكية فوق الأذن لايف 770NC من جيه بي ال مع خاصية الغاء الضوضاء التكيفية الحقيقية، أزرق",
     "price": 5999.0,
     "old_price": 9599.0,
@@ -426,31 +378,6 @@
    "id": "417df1c71a",
    "priority": 1,
    "created_at": "2026-11-27T23:06:33.160558+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
-    "title": "مكواة بخار محمولة من تورنيدو TST-HS1300، وات - ابيض وازرق 1300",
-    "price": 2879.0,
-    "old_price": 4599.0,
-    "saving": 1720.0,
-    "pct": 37,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/dp/B0976G53HF?tag=tahergalaleld-21",
-   "asin": "B0976G53HF",
-   "photo": "https://cdn4.telesco.pe/file/psTEvIUy6h1PADPcpuhQlPkwd5A9xtv0OZqALDs5LQqrNF3Bq5zgcG1JDAzRj8zGk6CSDWDWbj2A9n7v6hRnD8gfkmO8F7Tuk1Rv1ErmQegujYYFRI-avbDqIeKIM5Czh9VO467_Loqp8CErGGUK6VZVowLfzvibZlUEn4AxDLTJzCHIH9WxQFtCnP_BjFiNd5IAOWoj_LQ0m1yPedboHV92w7YDWIcxUeQobHg2fIXMdh317wjoBlVZWofV_jEYYxZY1KXdLAzM7CmLt77BU_gE0oXUPo2zPa3ZDdm6RvpsEtpVW-HvjVOUGra8BJryBHHU4htBXhoiB4utK2wZ_w.jpg",
-   "collection": false,
-   "key": "B0976G53HF",
-   "score": 42,
-   "source": "HotDealsAQ/43937",
-   "photo_crop": "card",
-   "id": "4a00214965",
-   "priority": 1,
-   "created_at": "2026-11-27T16:28:14.973278+00:00"
   },
   {
    "kind": "offer",
@@ -575,56 +502,6 @@
    "id": "9f80eb31df",
    "priority": 1,
    "created_at": "2026-11-27T22:56:29.062141+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
-    "title": "شاحن من أنكر بمنفذ USB متوافق مع آيفون 12 بمنفذ واحد بقدرة 20.0 واط مع شحن سريع وتقنية GaN وتبديد الحرارة",
-    "price": 259.0,
-    "old_price": 398.0,
-    "saving": 139.0,
-    "pct": 35,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/dp/B0FXBDR62L?tag=tahergalaleld-21",
-   "asin": "B0FXBDR62L",
-   "photo": "https://cdn4.telesco.pe/file/bfV8ksnQCWXXKy5tC2ZJFP--3SbUThNaVUGXx96puIzxxxaNZmEfYqTQWDhQbHI-RHXM0NDiqQBeJuyWYXk3JsSjJlfj-puVyRKClki9wDc1vbWiLjBaQJsDkGC7v0Cea4Z3fNw4gAh3_Uwbp37nYzLlqBqGxpFLqRdrB9r4ZgR5F09CX2zljO5n72PDiEF3makm-E9J6BUhqjv962esp6XkizrC6kOrsHCGiJaYM0TOE_08EgwbWK_vYALwegLo_9boO8tl2PuUIMCZ4CDsMMMsDYj0MMmK10pTnvVaQyvT3X-laGw62BmfhS9k-gXhEkTkcLsPCbcH-PLOvqg4dg.jpg",
-   "collection": false,
-   "key": "B0FXBDR62L",
-   "score": 40,
-   "source": "HotDealsAQ/43942",
-   "photo_crop": "card",
-   "id": "de9a176c24",
-   "priority": 1,
-   "created_at": "2026-11-27T16:28:15.461994+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
-    "title": "قطاعة من تورنيدو CH-400B أبيض/أحمر 400 واط سطح الطاولة",
-    "price": 1169.0,
-    "old_price": 1799.0,
-    "saving": 630.0,
-    "pct": 35,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/dp/B08Y8YMBGJ?tag=tahergalaleld-21",
-   "asin": "B08Y8YMBGJ",
-   "photo": "https://cdn4.telesco.pe/file/Hwp2zL5QoRGHZDl5kLMez3ba3KcghxG2cMZQiqJAc_ebJcGF5CJFX4ttcsgQHVeLtohbnER0k4KFgOGl3VgnNipDu1AnUSSL7AV3_ZOaJ7l0lVr6erRrsOoWjaWOFwsRpo2aPUOj3DD2v1p95tazcYZ2i7wliyzzGVvpy2pfzfGskm3fnn2UKbU2KZT0uYhoP2-Pdz5Fc4J4vGOEGS5QxD49IN8mNGD1LkZiFbDehSGJO7BDyRePLZURCNOKR9uo8OxDW332lXjzfnEv8ib9ijro3yP6PBCK15Dfe4QnPnwtsXrqzW9bf6eII2L1W46lw6duQMH5ra3_1X4_1COKbA.jpg",
-   "collection": false,
-   "key": "B08Y8YMBGJ",
-   "score": 40,
-   "source": "HotDealsAQ/43947",
-   "photo_crop": "card",
-   "id": "c099ddcd0c",
-   "priority": 1,
-   "created_at": "2026-11-27T16:38:19.578873+00:00"
   },
   {
    "kind": "offer",
@@ -902,31 +779,6 @@
   {
    "kind": "offer",
    "offer": {
-    "title": "طقم حلل اكسبريس من 6 قطع من زينوكس",
-    "price": 972.0,
-    "old_price": 1402.0,
-    "saving": 430.0,
-    "pct": 31,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/dp/B09JZHKLW9?tag=tahergalaleld-21",
-   "asin": "B09JZHKLW9",
-   "photo": "https://cdn4.telesco.pe/file/E_ocDGZgG8L45nPZ4aIxAG_-Hr3HhiizGeGLF8LlkEH9RoCuIWLco6ZR7NGARZ76rHM_Uqx93NoW1xM6EiyyyBrnAsGn7O3vsTWRr0Fk_HfGdL91DQtE2JiF-FoRv97d2DISYVMfr3z-k7XLcbtk-4VuMaakji73t_ghH_osHeLaEKeXljCyxxZiijQAMG8CC94l2PZJDmeLLd_BHQQ10VOmyF2DuTiNaRrraQV6hTtu3SSAwYcpHdvDEzYd7i8JVP_jmJn2XXHOR8GRynQVurSZF6TNkjTfGk6TXWX3B3e_Yj6UsvOZPN2Fqfb3CrZYORoJQTpJ6-YIvf6MO0WpUg.jpg",
-   "collection": false,
-   "key": "B09JZHKLW9",
-   "score": 36,
-   "source": "HotDealsAQ/43936",
-   "photo_crop": "card",
-   "id": "7e42932707",
-   "priority": 1,
-   "created_at": "2026-11-27T16:28:14.850013+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
     "title": "ماكينة حلاقة كهربائية احترافية V-353 قابلة لإعادة الشحن من في جي ار، ماكينة حلاقة رفيعة للغاية للعناية بالوجه وتشذيب اللحية، شفرات ترددية مع ماكينة سفر بوصلة US",
     "price": 240.0,
     "old_price": 350.0,
@@ -1073,31 +925,6 @@
    "id": "3320f727e1",
    "priority": 1,
    "created_at": "2026-11-27T22:56:29.598289+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
-    "title": "ميركوسيس راوتر واي فاي لاسلكي ثنائي النطاق MR20 بسرعة 750 ميجابت في الثانية | متعدد الاوضاع AC750 | 2 هوائي خارجي عالي الكسب | يدعم IPTV وIPv6، ابيض",
-    "price": 599.0,
-    "old_price": 846.0,
-    "saving": 247.0,
-    "pct": 29,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/dp/B0CVVYM836?tag=tahergalaleld-21",
-   "asin": "B0CVVYM836",
-   "photo": "https://cdn4.telesco.pe/file/S7a2RG_aY9alZA-xb-x-YzFNrhwbjqO72x_L6Jl4lG2W4m-OIZbR803tHKmZSo69yT8FFFrGbj7Vk5TtocQloL2hFciDtOpOcjcswrfjh_aAlvlRVlJ6chc2x--ILNaupCCuGlnBSFiRzs-1p0qKEl2kRDiaXDB9l2z5QVYrTej7YSh3RjELopOgEaAFB0uTlKOniwGTg09M3E-O_PAPhYdPW9oKEaQunNDJdhq16W1JbwMJl6dNBf3PnlZxlRQ_TPWKrx4Ch8LdhFS524_ri62RSA7GR0FouFXGKlOMZ1VJhKsY2CflX6Y4L3vkPi_XySINStA8bMbxmid-9K2e4g.jpg",
-   "collection": false,
-   "key": "B0CVVYM836",
-   "score": 34,
-   "source": "HotDealsAQ/43952",
-   "photo_crop": "card",
-   "id": "6ba8b978d6",
-   "priority": 1,
-   "created_at": "2026-11-27T16:38:20.003660+00:00"
   },
   {
    "kind": "offer",
@@ -1482,29 +1309,26 @@
   {
    "kind": "offer",
    "offer": {
-    "title": "سامسونج جالكسي A07s LTE،",
-    "price": 8399.0,
+    "title": "و ال15 شخص اغلى حبه بس لسه ارخص من العربي ب 13 الف و بضمان تلت سنين",
+    "price": 13.0,
     "old_price": null,
     "saving": null,
     "pct": null,
     "rating": null,
     "coupon": null,
-    "extra": [
-     "نظام اندرويد، 64 جيجابايت، رام 4 جيجابايت، 6.7 بوصة HD+ 90Hz، كاميرا 50 ميجابكسل، بطارية 5000 مللي أمبير، مقاومة IP54، ترقية النظام 6 مرات، "
-    ],
+    "extra": [],
     "used": false
    },
-   "url": "https://www.amazon.eg/dp/B0HMPJSWWZ?tag=tahergalaleld-21",
-   "asin": "B0HMPJSWWZ",
-   "photo": "https://cdn4.telesco.pe/file/MqmzW9TLuq4AyoTid384G5pyCZEmw6WIhUq_FtSnq6B-vNkv1nRT5ktm0ic9Hi3wu9ASXpi5JvOdWS_lulO_3sQyW2_Pntpwloahk-wl9ivL6vS5yzEkeyXmNd1hAPZp_7IV1cfo8Wz8WhgbG24ctlLgscqyD1gQa6d9geMCC5d80bdFEaSoVRHxcy3GNKeaXKsm8zHobPPvKfRjYlOMQp7bdK8v8kRP2FeB6QmpHHO-8iGm26Tp0V6F3NoSXVIabvC8xOkObJduzLrtWGF7dsIDL73_0NQaoNlmEBhffk9uZXGQB_t-b6zC8L-GlTzabNPOfr5Q83YXrsaRRkrmPA.jpg",
+   "url": "https://www.amazon.eg/dp/B0DFYJKVXC?tag=tahergalaleld-21",
+   "asin": "B0DFYJKVXC",
+   "photo": "https://cdn4.telesco.pe/file/WKLoQuXWsmyy8ju5mptavfQSAcCKzDm5FCi23dg2v_vh4XUQAwRSDZpfCjmVqB7RqKdIdE8jS7KOhiY69aE9AXYViiurzstEmHeBT7bykdN4baxQbeOclZciUKBuKGpmTGkD3IwHE0V0-s0jddj-osMl-qsHoXL6OIQdDV_GDbnc7x5ta47i7I527gHy0-5c8lULzsVcr3F1yE6otvv0c25d2lMNeKBoelc1ouxXD6csaqjfMugxfDVpOFrxuWM5wg05u0Dl37uu3oPHVEGnWMFya9jClOWWGSABM05kkC7-w9BuRIlzk1Yi-T4gEkoEMPvU7gznV15f9Fgzea1p1A.jpg",
    "collection": false,
-   "key": "B0HMPJSWWZ",
+   "key": "B0DFYJKVXC",
    "score": 5,
-   "source": "HotDealsAQ/44167",
-   "photo_crop": "card",
-   "id": "a691130af1",
+   "source": "amdaata/7970",
+   "id": "8d5038252f",
    "priority": 1,
-   "created_at": "2026-11-27T23:46:52.354845+00:00"
+   "created_at": "2026-11-28T00:12:16.641367+00:00"
   }
  ],
  "posted": {
@@ -2021,8 +1845,8 @@
  "last_auto_search_at": "2026-11-25T17:18:33.378212+00:00",
  "api": {
   "ok": false,
-  "error": "AccessDeniedError: Access denied for the requested operation - AssociateNotEligible; Your account does not currently meet the eligibility requirements. [request id: 1e757523-0c94-49dc-9cda-0eb72f7fea22]",
-  "checked_at": "2026-11-27T22:56:31.470222+00:00"
+  "error": "AccessDeniedError: Access denied for the requested operation - AssociateNotEligible; Your account does not currently meet the eligibility requirements. [request id: 38874f24-e8b2-4fb8-bd4e-854fbb01240f]",
+  "checked_at": "2026-11-27T23:52:12.166455+00:00"
  },
  "notified": {
   "api_down": "2026-11-27T20:57:51.943688+00:00",
@@ -2273,9 +2097,9 @@
   }
  ],
  "sources": {
-  "HotDealsAQ": 44169,
-  "TechComics": 14311,
-  "amdaata": 7969,
+  "HotDealsAQ": 44171,
+  "TechComics": 14313,
+  "amdaata": 7972,
   "yahiaashry2026": 411
  }
 }
