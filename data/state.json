@@ -4,128 +4,6 @@
   {
    "kind": "offer",
    "offer": {
-    "title": "باده ماوس كبيره على شكل غابه ب 157 بدل 190",
-    "price": 157.0,
-    "old_price": 190.0,
-    "saving": 33.0,
-    "pct": 17,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/dp/B0GF278CYG?tag=tahergalaleld-21",
-   "asin": "B0GF278CYG",
-   "photo": "https://cdn4.telesco.pe/file/py2uJWQkGszxiOR8DfTchjEdRFkpBlXo77JlKJHSgPMUSsIy63UuOxBZ3RajW70qNzOvGo_7yHmkDsA-uEjdf5XZ-KivuxQAq8QuQu1LhZXkBhUKETgfkmJmAEcSsVTw5bXV_agk9pcFb6GAUWPg5mTKki3jvU6IS-ZTToyzmuoo_x1gkH9arZTkCruUXLCn43Sn34HCtLbJaLS1cHGSII6VK0yBMHXX7XwZf94m4hmFAOzHOv3QTkP7uQd9s0OiP2hSB9t_jwd6UG0xZpkJzx142EIYqJnFNQqEtXe7R4_kZmuAVLMBXhGGiA1FkntWq4Tpri_YeQFSiGGXZu1m7w.jpg",
-   "collection": false,
-   "key": "B0GF278CYG",
-   "score": 22,
-   "source": "amdaata/7973",
-   "id": "b1a94ee173",
-   "priority": 1,
-   "created_at": "2026-11-28T01:07:59.574359+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
-    "title": "خصم 10٪ على زجاجات و مجات تانك الحراريه",
-    "price": null,
-    "old_price": null,
-    "saving": null,
-    "pct": 10,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/-/en/promotion/psp/A2PG7B5KCEQWOR?pf_rd_m=A1ZVRGNO5AYLOV&pf_rd_s=merchandised-search-3&pf_rd_t=&pf_rd_i=52295425031&tag=tahergalaleld-21",
-   "asin": null,
-   "photo": "https://cdn4.telesco.pe/file/qOkUK9e_Rtn8WEPWBT7V3YsQ6UfW1lYkVsc3V8O-UAgu5QPncCeFK2j1esDxZB-v0Kn3Ynh8hcUrJx0janbqBaMaKzombv7FNiI8SfIIGHLGpBEGAcFasysAiyYYB7rUgsMD4prDW0eewrRgUVm0beiFjtdjWaFcUHbLxDesZFdGBz--NxnHFtAqfkhS57QWH7bkPJSBmrYeInKQfi02WT86jinzspqCoNjbZk3MBsVsY3po_k-7CdVzRBrleVJ62_Uw1MiUMBoppsZzHZQ6rtJmflYzPYW1csu-XattZrROQq4ceYKWjEm4BmSVz6iW-JvbsxoNggS8b-jmEgIuvw.jpg",
-   "collection": true,
-   "key": "page:/promotion/psp/A2PG7B5KCEQWOR",
-   "score": 10,
-   "source": "TechComics/14317",
-   "id": "07660ea704",
-   "priority": 1,
-   "created_at": "2026-11-28T04:04:45.843276+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
-    "title": "خصم 10٪ على الحجاره من ايفيريدى و اينرجيزر",
-    "price": null,
-    "old_price": null,
-    "saving": null,
-    "pct": 10,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/-/en/promotion/psp/A1MGPAJV09SFZP?pf_rd_m=A1ZVRGNO5AYLOV&pf_rd_s=merchandised-search-10&pf_rd_t=&pf_rd_i=52295425031&tag=tahergalaleld-21",
-   "asin": null,
-   "photo": "https://cdn4.telesco.pe/file/wAE_U86xVq59nIgvw-aJ2hcytea9cjbb3rOhbyzx3G-TapP1e8WCOTycgtKr1WKplGKYuePwv7qfJ7cbjo2VyC4bV9g7ZXjjViGzAMegrCznPKPFqO6Ez33gqxVyXOGSSmB98OJQOs1093Pmkp3y8HcfMIN6-Sq-5SASUT8o74D3eirDUZnlS2wt6vyWiTswMCV4ubfPGLxZbNvm04Zf0PXWOEpo3YYGURuH6JlSrv-BSznhcjUFbMH49upUwfX6Da0D5vdNKDzzvZVx2ROodER-b34xJI048chM8UR3oJbKr4RMYgdJlKQ4RyS3lXZQkV6hkVb-N2t6UWHKrgHpcw.jpg",
-   "collection": true,
-   "key": "page:/promotion/psp/A1MGPAJV09SFZP",
-   "score": 10,
-   "source": "TechComics/14318",
-   "id": "03cedb8298",
-   "priority": 1,
-   "created_at": "2026-11-28T06:20:07.057495+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
-    "title": "و ال15 شخص اغلى حبه بس لسه ارخص من العربي ب 13 الف و بضمان تلت سنين",
-    "price": 13.0,
-    "old_price": null,
-    "saving": null,
-    "pct": null,
-    "rating": null,
-    "coupon": null,
-    "extra": [],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/dp/B0DFYJKVXC?tag=tahergalaleld-21",
-   "asin": "B0DFYJKVXC",
-   "photo": "https://cdn4.telesco.pe/file/WKLoQuXWsmyy8ju5mptavfQSAcCKzDm5FCi23dg2v_vh4XUQAwRSDZpfCjmVqB7RqKdIdE8jS7KOhiY69aE9AXYViiurzstEmHeBT7bykdN4baxQbeOclZciUKBuKGpmTGkD3IwHE0V0-s0jddj-osMl-qsHoXL6OIQdDV_GDbnc7x5ta47i7I527gHy0-5c8lULzsVcr3F1yE6otvv0c25d2lMNeKBoelc1ouxXD6csaqjfMugxfDVpOFrxuWM5wg05u0Dl37uu3oPHVEGnWMFya9jClOWWGSABM05kkC7-w9BuRIlzk1Yi-T4gEkoEMPvU7gznV15f9Fgzea1p1A.jpg",
-   "collection": false,
-   "key": "B0DFYJKVXC",
-   "score": 5,
-   "source": "amdaata/7970",
-   "id": "8d5038252f",
-   "priority": 1,
-   "created_at": "2026-11-28T00:12:16.641367+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
-    "title": "الشاومى ال 17 تى برو .. نازل ب 45555 بدل سعره فى لسته شاومى الجديده 54 الف",
-    "price": 45555.0,
-    "old_price": null,
-    "saving": null,
-    "pct": null,
-    "rating": null,
-    "coupon": null,
-    "extra": [
-     "البائع امازون .. ضمان الوكيل سنه و نص .. شحن مجانى"
-    ],
-    "used": false
-   },
-   "url": "https://www.amazon.eg/s?k=B0GZ8QH618%7CB0GZ8DTQRB&tag=tahergalaleld-21",
-   "asin": null,
-   "photo": "https://cdn4.telesco.pe/file/BGVvHiPg9PlTVaDKa44ZZ9B97LfsSYTm_VfmaS2JMXqxbyWkOg9_7BpkTGwkz5rlJx-Ylvo0_hR79PyAKyIWQWNKueEEA2bBob4V8OTojcf3DjZUOLLKjkVDLG3p12AH6qAsWpW_5IefqGJtlcsZQWRGdJnJ8rQEPDEyP1IgNWQePqqI27vGFsvLHCBGOfsClZDhHOs63iVLiGFzcLwSEt3rsrJ0Sdh0UIc35e5v5h1vo95tBwpj81nK4czsl1zP56ofJfigx2ZUXuqAGHX4aN6d_uEAbhgDsk1_Dvyl3rHE5DUGWWkmflnDJxZCCAaBhOVRzm3RWaRVD4DhkAWqIQ.jpg",
-   "collection": true,
-   "key": "page:/s",
-   "score": 5,
-   "source": "TechComics/14314",
-   "id": "ce368a725a",
-   "priority": 1,
-   "created_at": "2026-11-28T01:07:59.196567+00:00"
-  },
-  {
-   "kind": "offer",
-   "offer": {
     "title": "اكتر تليفزيون قيمه مقابل السعر موجود فى السوق حاليا .. من شاومى ب 9999",
     "price": 9999.0,
     "old_price": null,
@@ -174,6 +52,30 @@
    "id": "e0da38e715",
    "priority": 1,
    "created_at": "2026-11-28T03:54:42.203373+00:00"
+  },
+  {
+   "kind": "offer",
+   "offer": {
+    "title": "خصم 50٪ لما تشترى قطعتين او اكتر من اطقم الكوبايات و الاوانى الزجاجيه",
+    "price": null,
+    "old_price": null,
+    "saving": null,
+    "pct": null,
+    "rating": null,
+    "coupon": null,
+    "extra": [],
+    "used": false
+   },
+   "url": "https://www.amazon.eg/-/en/promotion/psp/AORCQBOZPP7NZ?pf_rd_m=A1ZVRGNO5AYLOV&pf_rd_s=merchandised-search-3&pf_rd_t=&pf_rd_i=52295425031&tag=tahergalaleld-21",
+   "asin": null,
+   "photo": "https://cdn4.telesco.pe/file/T1SRhEVjq8ry4Bdh9j6sZs6lbeIbZviHzAAAycbynoqcAB7BtpoG6R8zi1KnOH50z1N7oO1UVUBjtn2clQ--mLUzx6csmEGKv6bBTqcYLn3eJwb1HIoVOZ4C3j4TFcONtTR5bXFhZ2gVf3qZeUoQAPjWoUKCWhwKD8iL1gJl-4w8_6MXjrECta-hTNbXxfISEPZ0N2vJhXCBepBRpp_OglIOOyFY1HTd53pl7esTqH_2wKAvcpkBKb_zwK6TsLoPgW6z9Nqkdj0pbYRYVB19B1coQBurKIGEzi3lUSrr_NRoCxUlklVNOajMtfI_fMVtczRTKfFQ-Y-SBeXsQADwcA.jpg",
+   "collection": true,
+   "key": "page:/promotion/psp/AORCQBOZPP7NZ",
+   "score": 0,
+   "source": "TechComics/14321",
+   "id": "7e48c05262",
+   "priority": 1,
+   "created_at": "2026-11-28T09:22:32.756252+00:00"
   }
  ],
  "posted": {
@@ -684,18 +586,34 @@
   "B0DBGCSSP7": {
    "at": "2026-11-28T08:00:17.101450+00:00",
    "price": 369.0
+  },
+  "page:/promotion/psp/A2GY9D9STQVKT1": {
+   "at": "2026-11-28T08:51:03.915496+00:00",
+   "price": null
+  },
+  "B0GF278CYG": {
+   "at": "2026-11-28T09:07:48.322903+00:00",
+   "price": 157.0
+  },
+  "page:/promotion/psp/A2PG7B5KCEQWOR": {
+   "at": "2026-11-28T09:24:35.337074+00:00",
+   "price": null
+  },
+  "page:/promotion/psp/A1MGPAJV09SFZP": {
+   "at": "2026-11-28T09:41:19.701158+00:00",
+   "price": null
   }
  },
  "day": {
   "date": "2026-11-28",
-  "count": 4
+  "count": 8
  },
- "last_post_at": "2026-11-28T08:00:17.101471+00:00",
+ "last_post_at": "2026-11-28T09:41:19.701180+00:00",
  "last_auto_search_at": "2026-11-25T17:18:33.378212+00:00",
  "api": {
   "ok": false,
-  "error": "AccessDeniedError: Access denied for the requested operation - AssociateNotEligible; Your account does not currently meet the eligibility requirements. [request id: 822017b0-cabc-45bf-a4e9-f60e5514e330]",
-  "checked_at": "2026-11-28T07:14:03.059866+00:00"
+  "error": "AccessDeniedError: Access denied for the requested operation - AssociateNotEligible; Your account does not currently meet the eligibility requirements. [request id: 159ca1cc-fa8c-498c-97dc-5b41b103762e]",
+  "checked_at": "2026-11-28T08:51:02.396495+00:00"
  },
  "notified": {
   "api_down": "2026-11-27T20:57:51.943688+00:00",
@@ -704,22 +622,6 @@
  "paused": false,
  "commands_set": true,
  "log": [
-  {
-   "at": "2026-11-26T17:44:38.303832+00:00",
-   "wa": "نص التمن وأقل! خصم 50% 😳\n\nالمنتج: *معطر جو ماجيك سبرايز برائحة مضادة للتبغ من ماكسيل - 475 مل*\nالسعر دلوقتي: *35 جنيه* بدل ~70~ جنيه\nهتوفر 35 جنيه (خصم 50%) 💸\n\nاطلبه من هنا 👇\nhttps://www.amazon.eg/dp/B08WJN65HC?tag=tahergalaleld-21\nالسعر وقت النشر وممكن يتغير في أي وقت\nتابعنا على كل المنصات: @mr.taher.reviews"
-  },
-  {
-   "at": "2026-11-26T18:00:42.968696+00:00",
-   "wa": "لقطة النهارده: خصم 50% 🔥\n\nالمنتج: *معطر جو سبرايز برائحة الرومبا من ماكسيل ماجيك - 475 مل*\nالسعر دلوقتي: *35 جنيه* بدل ~70~ جنيه\nهتوفر 35 جنيه (خصم 50%) 💸\n\nاطلبه من هنا 👇\nhttps://www.amazon.eg/dp/B08WJPYF9B?tag=tahergalaleld-21\nالسعر وقت النشر وممكن يتغير في أي وقت\nتابعنا على كل المنصات: @mr.taher.reviews"
-  },
-  {
-   "at": "2026-11-26T18:56:46.200772+00:00",
-   "wa": "نص التمن وأقل! خصم 59% 😳\n\nالمنتج: *جيني لعبة كرانشي ستروبيري اسفنجية لتخفيف التوتر*\nالسعر دلوقتي: *82 جنيه* بدل ~199~ جنيه\nهتوفر 117 جنيه (خصم 59%) 💸\n\nاطلبه من هنا 👇\nhttps://www.amazon.eg/dp/B0HM5H64GY?tag=tahergalaleld-21\nالسعر وقت النشر وممكن يتغير في أي وقت\nتابعنا على كل المنصات: @mr.taher.reviews"
-  },
-  {
-   "at": "2026-11-26T19:13:28.719275+00:00",
-   "wa": "وفّر فلوسك: خصم 45% ⚡\n\nالمنتج: *مجموعة محول USB نوع سي إلى لايتنينج، كابل شحن متعدد USB نوع سي إلى نوع سي/جهاز iOS/محول مايكرو يحتوي على بطاقة تخزين…*\nالسعر دلوقتي: *56 جنيه* بدل ~101~ جنيه\nهتوفر 45 جنيه (خصم 45%) 💸\n\nاطلبه من هنا 👇\nhttps://www.amazon.eg/dp/B09SQ21VHK?tag=tahergalaleld-21\nالسعر وقت النشر وممكن يتغير في أي وقت\nتابعنا على كل المنصات: @mr.taher.reviews"
-  },
   {
    "at": "2026-11-26T19:30:12.746121+00:00",
    "wa": "وفّر فلوسك: خصم 44% ⚡\n\nالمنتج: *سيروم هيالورون اكسبرت للعين مع 2.5% حمض الهيالورونيك والكافيين والنياسيناميد - 20 مل من لوريال باريس*\nالسعر دلوقتي: *437 جنيه* بدل ~780~ جنيه\nهتوفر 343 جنيه (خصم 44%) 💸\n\nاطلبه من هنا 👇\nhttps://www.amazon.eg/dp/B09TKWKYWZ?tag=tahergalaleld-21\nالسعر وقت النشر وممكن يتغير في أي وقت\nتابعنا على كل المنصات: @mr.taher.reviews"
@@ -943,11 +845,27 @@
   {
    "at": "2026-11-28T08:00:16.374241+00:00",
    "wa": "خصم 49% على حاجة تستاهل 👌\n\nالمنتج: *⭕️عرض ممتاز الحقه 🔥*\nالسعر: *369 جنيه*\nالخصم: 49% 💸\nشاحن سيارة باور درايف بقدرة 30 واط مع PPS بمنفذين USB نوع سي فائقي السرعة يشحن جهازين في الوقت نفسه متوافق مع آيفون وآيباد وايربودز وجالكسي \n\nاطلبه من هنا 👇\nhttps://www.amazon.eg/dp/B0DBGCSSP7?tag=tahergalaleld-21\nالسعر وقت النشر وممكن يتغير في أي وقت\nتابعنا على كل المنصات: @mr.taher.reviews"
+  },
+  {
+   "at": "2026-11-28T08:51:02.397005+00:00",
+   "wa": "خصم 50% على أمازون مصر، الحق قبل ما يخلص 🔥\n\n*خصم 50٪ على منتجات سوكانى*\nالخصم: 50% 💸\n\nشوف العروض من هنا 👇\nhttps://www.amazon.eg/-/en/promotion/psp/A2GY9D9STQVKT1?pf_rd_m=A1ZVRGNO5AYLOV&pf_rd_s=merchandised-search-4&pf_rd_t=&pf_rd_i=52295425031&tag=tahergalaleld-21\nتابعنا على كل المنصات: @mr.taher.reviews"
+  },
+  {
+   "at": "2026-11-28T09:07:27.719308+00:00",
+   "wa": "عرض جديد على أمازون مصر 🛒\n\nالمنتج: *باده ماوس كبيره على شكل غابه ب 157 بدل 190*\nالسعر دلوقتي: *157 جنيه* بدل ~190~ جنيه\nهتوفر 33 جنيه (خصم 17%) 💸\n\nاطلبه من هنا 👇\nhttps://www.amazon.eg/dp/B0GF278CYG?tag=tahergalaleld-21\nالسعر وقت النشر وممكن يتغير في أي وقت\nتابعنا على كل المنصات: @mr.taher.reviews"
+  },
+  {
+   "at": "2026-11-28T09:24:33.745461+00:00",
+   "wa": "سعر كويس النهارده على أمازون 👌\n\n*خصم 10٪ على زجاجات و مجات تانك الحراريه*\nالخصم: 10% 💸\n\nشوف العروض من هنا 👇\nhttps://www.amazon.eg/-/en/promotion/psp/A2PG7B5KCEQWOR?pf_rd_m=A1ZVRGNO5AYLOV&pf_rd_s=merchandised-search-3&pf_rd_t=&pf_rd_i=52295425031&tag=tahergalaleld-21\nتابعنا على كل المنصات: @mr.taher.reviews"
+  },
+  {
+   "at": "2026-11-28T09:40:59.087797+00:00",
+   "wa": "سعر كويس النهارده على أمازون 👌\n\n*خصم 10٪ على الحجاره من ايفيريدى و اينرجيزر*\nالخصم: 10% 💸\n\nشوف العروض من هنا 👇\nhttps://www.amazon.eg/-/en/promotion/psp/A1MGPAJV09SFZP?pf_rd_m=A1ZVRGNO5AYLOV&pf_rd_s=merchandised-search-10&pf_rd_t=&pf_rd_i=52295425031&tag=tahergalaleld-21\nتابعنا على كل المنصات: @mr.taher.reviews"
   }
  ],
  "sources": {
   "HotDealsAQ": 44171,
-  "TechComics": 14319,
+  "TechComics": 14321,
   "amdaata": 7975,
   "yahiaashry2026": 411
  }
